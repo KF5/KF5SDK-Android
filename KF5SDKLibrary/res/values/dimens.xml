@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_m_size">14sp</dimen>
+    <dimen name="text_l_size">16sp</dimen>
+    <dimen name="text_h_size">18sp</dimen>
+    <dimen name="text_xh_size">20sp</dimen>
+    <dimen name="pending_eight">8dp</dimen>
+    <dimen name="pending_one_two">12dp</dimen>
+    <dimen name="pending_three_two">32dp</dimen>
+    <dimen name="pending_one_six">16dp</dimen>
+    <dimen name="pending_two_four">24dp</dimen>
+    <dimen name="pending_four">4dp</dimen>
+    <dimen name="pending_two">2dp</dimen>
+    <dimen name="line_width">1dip</dimen>
+
+    <!-- home_widgets_margin -->
+    <dimen name="home_margin_m">16dp</dimen>
+    <dimen name="home_margin_l">24dp</dimen>
+    <dimen name="home_margin_h">32dp</dimen>
+
+    <!-- message_box -->
+    <dimen name="message_box_radius">8dp</dimen>
+    <dimen name="messagebox_width">260dp</dimen>
+
+</resources>

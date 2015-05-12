@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FK5SDK</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="remove">移除</string>
+    <!-- 欢迎界面 -->
+    <string name="sdk_name">逸创云客服</string>
+    <string name="home_to_use_sdk">欢迎使用逸创云客服SDK</string>
+    <string name="home_to_remind">以下是展示逸创云客服SDK功能的按钮</string>
+    <string name="home_help_button">帮助中心</string>
+    <string name="home_feedback_button">反馈问题</string>
+    <string name="home_look_feedback">查看反馈</string>
+    <string name="title_activity_help_center">HelpCenterActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_feed_back">FeedBackActivity</string>
+    <string name="title_activity_look_feed_back">LookFeedBackActivity</string>
+    <string name="net_enable">当前网络未连接</string>
+    <string name="server_unsul">服务器异常</string>
+    <string name="document_content">文档内容</string>
+    <!-- help_center -->
+    <string name="connect_us">联系我们</string>
+    <string name="area_list">分区列表</string>
+    <string name="search">搜索</string>
+    <string name="search_hint">请输入搜索内容</string>
+
+    <!-- feed_back -->
+    <string name="submit">提交</string>
+    <string name="cancel">取消</string>
+    <string name="edittext_hint">请输入问题</string>
+
+    <!-- look_feed_back -->
+    <string name="feed_back_list">反馈列表</string>
+    <string name="title_activity_feed_back_details">FeedBackDetailsActivity</string>
+
+    <!-- others -->
+
+    <string name="just">刚刚</string>
+    <string name="_day">%1$s天前</string>
+    <string name="_second">%1$s秒前</string>
+    <string name="_minite">%1$s分钟前</string>
+    <string name="_hour">%1$s小时前</string>
+
+    <!-- feed back details -->
+
+    <string name="send">发送</string>
+    <string name="input_please">请输入问题</string>
+    <string name="title_activity_help_center_type">HelpCenterTypeActivity</string>
+    <string name="title_activity_help_center_type_details">HelpCenterTypeDetailsActivity</string>
+    <!-- feed back -->
+    <string name="submit_success">提交成功</string>
+    <string name="order_title">来自%1$s的工单请求</string>
+    <string name="uploading">上传中&#8230;</string>
+    <string name="upload_success">上传成功</string>
+
+</resources>

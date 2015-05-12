@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bar_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sdk_name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_xh_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_to_use_sdk"
+            android:textSize="@dimen/text_h_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_margin_m"
+            android:text="@string/home_to_remind"
+            android:textSize="@dimen/text_m_size" />
+
+        <TextView
+            android:id="@+id/activity_main_help_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_margin_h"
+            android:background="@drawable/button_bg"
+            android:text="@string/home_help_button"
+            android:textSize="@dimen/text_h_size" />
+
+        <TextView
+            android:id="@+id/activity_main_feedback_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_margin_h"
+            android:background="@drawable/button_bg"
+            android:text="@string/home_feedback_button"
+            android:textSize="@dimen/text_h_size" />
+
+        <TextView
+            android:id="@+id/activity_main_look_feedback_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_margin_h"
+            android:background="@drawable/button_bg"
+               android:textSize="@dimen/text_h_size"
+            android:text="@string/home_look_feedback" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_bar_bg" >
+
+        <ImageView
+            android:id="@+id/return_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_img_bg" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/return_img"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_xh_size" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_feed_back_details_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/top_layout"
+        android:divider="@android:color/white"
+        android:listSelector="@android:color/white" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ECEFF3"
+        android:paddingBottom="@dimen/pending_eight"
+        android:paddingLeft="@dimen/pending_four"
+        android:paddingRight="@dimen/pending_four"
+        android:paddingTop="@dimen/pending_eight" >
+
+        <ImageView
+            android:id="@+id/activity_feed_back_choice_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/pending_four"
+            android:src="@drawable/choice_img_source" />
+
+        <TextView
+            android:id="@+id/activity_feed_back_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/pending_four"
+            android:text="@string/send"
+            android:textColor="@drawable/send_text_colordrawable"
+            android:textSize="@dimen/text_h_size" />
+
+        <EditText
+            android:id="@+id/activity_feed_back_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pending_two"
+            android:layout_marginRight="@dimen/pending_two"
+            android:maxLines="2"
+            android:layout_toLeftOf="@+id/activity_feed_back_submit"
+            android:layout_toRightOf="@+id/activity_feed_back_choice_img"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/input_please"
+            android:padding="@dimen/pending_eight" />
+    </RelativeLayout>
+
+</RelativeLayout>
