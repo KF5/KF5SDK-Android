@@ -13,7 +13,7 @@ import com.chosen.model.KF5SDKConfig;
 public class MainActivity extends Activity {
 
 
-	private TextView tv1,tv2,tv3;
+	private TextView tv1,tv2,tv3,tv4,tv5;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +21,10 @@ public class MainActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 		tv1 = (TextView) findViewById(R.id.activity_main_help_btn);
-		
+//		
 		KF5SDKConfig.INSTANCE.init("tianxiang.kf5.com","877977828@qq.com", "111111", 
 				"001552bace471f5b06e40e803231d450366cdc2095621fa0");
-		
+
 		tv1.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
 				
 			}
 		});
-
+//
 		tv3 = (TextView) findViewById(R.id.activity_main_look_feedback_btn);
 		tv3.setOnClickListener(new OnClickListener() {
 
@@ -61,5 +61,27 @@ public class MainActivity extends Activity {
 				
 			}
 		});
+////		tv4 = (TextView) findViewById(R.id.activity_main_look_feedback_btn1);
+//		tv4.setOnClickListener(new OnClickListener() {
+//
+//			@Override
+//			public void onClick(View v) {
+//				// TODO Auto-generated method stub
+//				
+//				KF5SDKConfig.INSTANCE.startFeedBackListActivity(MainActivity.this);
+//				
+//			}
+//		});
+//		tv5 = (TextView) findViewById(R.id.activity_main_look_feedback_btn2);
+//		tv5.setOnClickListener(new OnClickListener() {
+//
+//			@Override
+//			public void onClick(View v) {
+//				// TODO Auto-generated method stub
+//				
+//				KF5SDKConfig.INSTANCE.startFeedBackListActivity(MainActivity.this);
+//				
+//			}
+//		});
 	}
 }

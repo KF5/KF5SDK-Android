@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -8,13 +9,15 @@
         android:layout_alignParentTop="true"
         android:background="@color/title_bar_bg" >
 
-       <!--  <TextView
+        <!--
+             <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/sdk_name"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/text_xh_size" /> -->
+            android:textSize="@dimen/text_xh_size" />
+        -->
     </RelativeLayout>
 
     <LinearLayout
@@ -43,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/home_margin_h"
             android:background="@drawable/button_bg"
-            android:text="@string/home_help_button"
+            android:text="初始化"
             android:textSize="@dimen/text_h_size" />
 
         <TextView
@@ -52,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/home_margin_h"
             android:background="@drawable/button_bg"
-            android:text="@string/home_feedback_button"
+            android:text="停止推送"
             android:textSize="@dimen/text_h_size" />
 
         <TextView
@@ -61,8 +64,18 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/home_margin_h"
             android:background="@drawable/button_bg"
-               android:textSize="@dimen/text_h_size"
-            android:text="@string/home_look_feedback" />
+            android:text="重置推送"
+            android:textSize="@dimen/text_h_size" />
+        
+        
+        <TextView
+            android:id="@+id/activity_main_look_feedback_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_margin_h"
+            android:background="@drawable/button_bg"
+            android:text="高级功能"
+            android:textSize="@dimen/text_h_size" />
     </LinearLayout>
 
 </RelativeLayout>
