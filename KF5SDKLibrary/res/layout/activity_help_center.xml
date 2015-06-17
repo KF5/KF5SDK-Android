@@ -18,13 +18,24 @@
             android:layout_centerVertical="true"
             android:src="@drawable/back_img_bg" />
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/text_xh_size" />
+            android:layout_toLeftOf="@+id/help_center_connect_us"
+            android:layout_toRightOf="@+id/return_img"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_xh_size" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/help_center_connect_us"
@@ -36,14 +47,6 @@
             android:text="@string/connect_us"
             android:textColor="@drawable/text_bg"
             android:textSize="@dimen/text_xh_size" />
-
-      <!--   <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/text_xh_size" /> -->
     </RelativeLayout>
 
     <RelativeLayout
