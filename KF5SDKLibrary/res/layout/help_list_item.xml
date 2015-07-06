@@ -24,11 +24,14 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
+                android:singleLine="true"
                 android:text="公告新闻"
+                android:layout_toLeftOf="@+id/img"
                 android:textColor="@color/list_item_text_color"
                 android:textSize="@dimen/text_h_size" />
 
             <ImageView
+                android:id="@+id/img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"

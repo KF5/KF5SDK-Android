@@ -29,19 +29,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.chosen.kf5sdk.HelpCenterActivity" >
+        <activity
+            android:name="com.chosen.kf5sdk.HelpCenterActivity"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.chosen.kf5sdk.FeedBackActivity" >
+        <activity
+            android:name="com.chosen.kf5sdk.FeedBackActivity"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.chosen.kf5sdk.LookFeedBackActivity" >
+        <activity
+            android:name="com.chosen.kf5sdk.LookFeedBackActivity"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.chosen.kf5sdk.HelpCenterTypeActivity" >
+        <activity
+            android:name="com.chosen.kf5sdk.HelpCenterTypeActivity"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.chosen.kf5sdk.HelpCenterTypeChildActivity" >
+        <activity
+            android:name="com.chosen.kf5sdk.HelpCenterTypeChildActivity"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.chosen.kf5sdk.HelpCenterTypeDetailsActivity" >
+        <activity
+            android:name="com.chosen.kf5sdk.HelpCenterTypeDetailsActivity"
+            android:screenOrientation="portrait" >
         </activity>
-        <activity android:name="com.chosen.kf5sdk.FeedBackDetailsActivity" >
+        <activity
+            android:name="com.chosen.kf5sdk.FeedBackDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chosen.kf5sdk.ImagePagerActivity"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

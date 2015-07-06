@@ -21,12 +21,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/iamge_view"
                 android:orientation="vertical" >
 
                 <TextView
                     android:id="@+id/look_feed_back_listitem_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:singleLine="true"
                     android:text="公告新闻"
                     android:textColor="@color/look_feed_back_list_item_title_color"
                     android:textSize="@dimen/text_h_size" />
@@ -42,6 +44,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/iamge_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"

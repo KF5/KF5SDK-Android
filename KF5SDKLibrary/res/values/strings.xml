@@ -4,6 +4,7 @@
     <string name="app_name">FK5SDK</string>
     <string name="hello_world">Hello world!</string>
     <string name="remove">移除</string>
+    <string name="viewpager_indicator" translatable="false">%1$d/%2$d</string>
     <!-- 欢迎界面 -->
     <string name="sdk_name">逸创云客服</string>
     <string name="home_to_use_sdk">欢迎使用逸创云客服SDK</string>
@@ -18,6 +19,12 @@
     <string name="net_enable">当前网络未连接</string>
     <string name="server_unsul">服务器异常</string>
     <string name="document_content">文档内容</string>
+    <string name="setting_su">设置成功</string>
+    <string name="scan_pic">预览</string>
+    <string name="downing_ok" translatable="false">下载成功,文件保存在：\n%1$s</string>
+    <string name="down_attach" translatable="false">是否下载附件%1$s</string>
+    <string name="downing" translatable="false">开始下载...</string>
+    <string name="downed" translatable="false">已经下载</string>
     <!-- help_center -->
     <string name="connect_us">联系我们</string>
     <string name="area_list">分区列表</string>
@@ -52,5 +59,6 @@
     <string name="order_title">来自%1$s的工单请求</string>
     <string name="uploading">上传中&#8230;</string>
     <string name="upload_success">上传成功</string>
+    <string name="title_activity_push_setting">PushSettingActivity</string>
 
 </resources>
