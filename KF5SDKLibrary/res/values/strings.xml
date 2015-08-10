@@ -21,6 +21,7 @@
     <string name="document_content">文档内容</string>
     <string name="setting_su">设置成功</string>
     <string name="scan_pic">预览</string>
+    <string name="website_brower">网页浏览</string>
     <string name="downing_ok" translatable="false">下载成功,文件保存在：\n%1$s</string>
     <string name="down_attach" translatable="false">是否下载附件%1$s</string>
     <string name="downing" translatable="false">开始下载...</string>

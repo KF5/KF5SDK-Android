@@ -30,9 +30,9 @@
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:ellipsize="middle"
                 android:layout_gravity="center"
+                android:ellipsize="middle"
+                android:singleLine="true"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text_xh_size" />
         </LinearLayout>
@@ -102,16 +102,14 @@
                     android:singleLine="true"
                     android:textSize="@dimen/text_l_size" />
 
-                <TextView
-                    android:id="@+id/submit_textview"
+                <ImageView
+                    android:id="@+id/img_delete_content"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:padding="2dp"
-                    android:text="@string/search"
-                    android:textColor="@drawable/search_text_color"
-                    android:textSize="16sp" />
+                    android:src="@drawable/content_delete" />
             </RelativeLayout>
         </LinearLayout>
     </RelativeLayout>

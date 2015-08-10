@@ -37,7 +37,7 @@
             android:text="@string/home_to_remind"
             android:textSize="@dimen/text_m_size" />
 
-<TextView
+        <TextView
             android:id="@+id/activity_main_help_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:text="@string/home_help_button"
             android:textSize="@dimen/text_h_size" />
 
-       <TextView
+        <TextView
             android:id="@+id/activity_main_feedback_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,31 +55,14 @@
             android:text="@string/home_feedback_button"
             android:textSize="@dimen/text_h_size" />
 
-     <TextView
+        <TextView
             android:id="@+id/activity_main_look_feedback_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/home_margin_h"
             android:background="@drawable/button_bg"
             android:text="@string/home_look_feedback"
-            android:textSize="@dimen/text_h_size" /> 
-
-   <TextView
-            android:id="@+id/activity_main_look_feedback_btn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/home_margin_h"
-            android:background="@drawable/button_bg"
-            android:text="@string/home_look_feedback"
             android:textSize="@dimen/text_h_size" />
-         <TextView
-            android:id="@+id/activity_main_look_feedback_btn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/home_margin_h"
-            android:background="@drawable/button_bg"
-            android:text="@string/home_look_feedback"
-            android:textSize="@dimen/text_h_size" /> 
     </LinearLayout>
 
 </RelativeLayout>

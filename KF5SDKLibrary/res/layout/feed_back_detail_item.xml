@@ -61,7 +61,7 @@
                 android:textColor="@color/look_feed_back_list_item_title_color"
                 android:textSize="@dimen/text_h_size" />
 
-            <com.chosen.view.NoScrollGridView
+            <com.kf5sdk.view.NoScrollGridView
                 android:id="@+id/feed_back_detai_grid_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
                 android:numColumns="3"
                 android:verticalSpacing="4dp"
                 android:visibility="gone" >
-            </com.chosen.view.NoScrollGridView>
+            </com.kf5sdk.view.NoScrollGridView>
         </LinearLayout>
     </RelativeLayout>
 

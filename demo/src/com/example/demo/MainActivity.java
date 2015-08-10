@@ -1,5 +1,9 @@
 package com.example.demo;
 
+import com.kf5sdk.api.CallBack;
+import com.kf5sdk.model.HelpCenterType;
+import com.kf5sdk.model.KF5SDKConfig;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,10 +11,6 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.chosen.api.CallBack;
-import com.chosen.model.HelpCenterType;
-import com.chosen.model.KF5SDKConfig;
 
 public class MainActivity extends Activity {
 
@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
 		//		});
 
 		KF5SDKConfig.INSTANCE.init(MainActivity.this,"tianxiang.kf5.com","111@kf5.com", 
-				"001557e8f9d8f17765b589e80bbdfa9d23733a6e7a25ead8",new CallBack() {
+				"00155b5f81ac5a9318cd15ca21123187c1e381d1d7e577ca",new CallBack() {
 
 			@Override
 			public void onSuccess(String result) {

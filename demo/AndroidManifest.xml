@@ -15,7 +15,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.chosen.app.KF5Application"
+        android:name="com.example.demo.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -59,6 +59,14 @@
         </activity>
         <activity
             android:name="com.chosen.kf5sdk.ImagePagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chosen.kf5sdk.LinkUrlActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chosen.kf5sdk.ImageActivity"
             android:screenOrientation="portrait" >
         </activity>
     </application>
