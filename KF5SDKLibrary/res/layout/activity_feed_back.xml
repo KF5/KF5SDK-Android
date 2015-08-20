@@ -63,6 +63,7 @@
         android:layout_above="@+id/bottom_layout"
         android:layout_below="@+id/top_layout"
         android:background="@null"
+        android:focusable="false"
         android:gravity="top|left"
         android:hint="@string/edittext_hint"
         android:padding="@dimen/pending_eight" />
@@ -85,8 +86,8 @@
             android:id="@+id/feed_back_image_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginTop="@dimen/pending_four"
+            android:orientation="vertical"
             android:visibility="gone" >
         </LinearLayout>
     </LinearLayout>

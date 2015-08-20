@@ -20,15 +20,6 @@
             android:src="@drawable/back_img_bg"
             android:visibility="visible" />
 
-       <!--  <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/return_img"
-            android:text="@string/sdk_name"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/text_xh_size" /> -->
-
         <TextView
             android:id="@+id/look_feed_back_connect_us"
             android:layout_width="wrap_content"
@@ -50,14 +41,14 @@
             android:textSize="@dimen/text_xh_size" />
     </RelativeLayout>
 
-    <ListView
+    <com.kf5sdk.view.RefreshListView
         android:id="@+id/look_feed_back_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/top_layout"
-        android:divider="@android:color/white"
         android:background="@android:color/white"
+        android:divider="@android:color/white"
         android:listSelector="@android:color/white" >
-    </ListView>
+    </com.kf5sdk.view.RefreshListView>
 
 </RelativeLayout>

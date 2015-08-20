@@ -8,55 +8,53 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/pending_one_two"
-        android:orientation="vertical" >
+        android:orientation="horizontal"
+        android:padding="@dimen/pending_one_two" >
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/pending_one_two"
-            android:paddingRight="@dimen/pending_one_two"
-            android:paddingTop="@dimen/pending_one_two" >
+            android:layout_weight="1"
+            android:orientation="vertical" >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/iamge_view"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/look_feed_back_listitem_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:singleLine="true"
-                    android:text="公告新闻"
-                    android:textColor="@color/look_feed_back_list_item_title_color"
-                    android:textSize="@dimen/text_h_size" />
-
-                <TextView
-                    android:id="@+id/look_feed_back_listitem_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/pending_eight"
-                    android:text="2013-12-32 13:21"
-                    android:textColor="@color/look_feed_back_list_item_date_color"
-                    android:textSize="@dimen/text_h_size" />
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/iamge_view"
+            <TextView
+                android:id="@+id/look_feed_back_listitem_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:contentDescription="@null"
-                android:src="@drawable/jump_icon" />
-        </RelativeLayout>
+                android:singleLine="true"
+                android:textColor="@color/look_feed_back_list_item_title_color"
+                android:textSize="@dimen/text_h_size" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_width"
-            android:background="@color/line_color" />
+            <TextView
+                android:id="@+id/look_feed_back_listitem_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pending_eight"
+                android:textColor="@color/look_feed_back_list_item_date_color"
+                android:textSize="@dimen/text_h_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/look_feed_back_listitem_statu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/pending_four"
+            android:textColor="@color/look_feed_back_list_item_date_color"
+            android:textSize="@dimen/text_m_size" />
+
+        <ImageView
+            android:id="@+id/iamge_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
+            android:src="@drawable/jump_icon" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:background="@color/line_color" />
 
 </LinearLayout>

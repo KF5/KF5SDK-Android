@@ -28,6 +28,7 @@
             android:layout_toLeftOf="@+id/img"
             android:layout_toRightOf="@+id/return_img"
             android:ellipsize="end"
+            android:gravity="center"
             android:singleLine="true"
             android:textColor="@android:color/white"
             android:textSize="@dimen/text_xh_size" />
@@ -57,16 +58,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#ECEFF3"
-        android:paddingBottom="@dimen/pending_eight"
-        android:paddingLeft="@dimen/pending_four"
-        android:paddingRight="@dimen/pending_four"
-        android:paddingTop="@dimen/pending_eight" >
+        android:background="#ECEFF3" >
 
         <RelativeLayout
             android:id="@+id/send_content_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/pending_eight"
+            android:paddingLeft="@dimen/pending_four"
+            android:paddingRight="@dimen/pending_four"
+            android:paddingTop="@dimen/pending_eight"
             android:visibility="visible" >
 
             <ImageView
@@ -99,9 +100,10 @@
                 android:layout_toLeftOf="@+id/activity_feed_back_submit"
                 android:layout_toRightOf="@+id/activity_feed_back_choice_img"
                 android:background="@drawable/edittext_bg"
+                android:focusable="false"
                 android:hint="@string/input_please"
-                android:maxLines="2"
-                android:padding="@dimen/pending_eight" />
+                android:padding="@dimen/pending_eight"
+                android:singleLine="true" />
         </RelativeLayout>
 
         <LinearLayout
@@ -109,10 +111,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginBottom="@dimen/pending_four"
-            android:layout_marginTop="@dimen/pending_four"
             android:gravity="center_vertical"
             android:orientation="horizontal"
+            android:paddingBottom="@dimen/pending_one_two"
+            android:paddingLeft="@dimen/pending_four"
+            android:paddingRight="@dimen/pending_four"
+            android:paddingTop="@dimen/pending_one_two"
             android:visibility="gone" >
 
             <ImageView
@@ -143,6 +147,18 @@
                 </LinearLayout>
             </HorizontalScrollView>
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_feed_back_replace_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/pending_eight"
+            android:paddingTop="@dimen/pending_eight"
+            android:text="@string/order_closed"
+            android:textSize="@dimen/text_h_size"
+            android:visibility="gone" />
     </RelativeLayout>
 
 </RelativeLayout>

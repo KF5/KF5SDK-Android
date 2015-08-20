@@ -23,5 +23,6 @@
     <color name="et_line_bg">#DDDDDD</color>
     <color name="text_color">#72c7f6</color>
     <color name="normal_color">#8d8d8d</color>
+    <color name="list_pull_back">#eeeeee</color>
 
 </resources>

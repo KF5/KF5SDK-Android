@@ -98,6 +98,7 @@
                     android:layout_height="wrap_content"
                     android:background="@null"
                     android:hint="@string/search_hint"
+                    android:imeOptions="actionSearch"
                     android:padding="@dimen/pending_two"
                     android:singleLine="true"
                     android:textSize="@dimen/text_l_size" />
@@ -122,16 +123,6 @@
         android:divider="@android:color/white"
         android:listSelector="@android:color/white"
         android:visibility="visible" >
-    </ListView>
-
-    <ListView
-        android:id="@+id/help_center_search_listview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@android:color/white"
-        android:divider="@android:color/white"
-        android:listSelector="@android:color/white"
-        android:visibility="gone" >
     </ListView>
 
 </LinearLayout>

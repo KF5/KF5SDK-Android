@@ -23,23 +23,6 @@ public class MainActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
 		tv1 = (TextView) findViewById(R.id.activity_main_help_btn);
-		//		
-		//		KF5SDKConfig.INSTANCE.init(MainActivity.this,"tianxiang.kf5.com","1234567@ncrxsz.org", "111111", 
-		//				"001552bace471f5b06e40e803231d450366cdc2095621fa0",
-		//				new CallBack() {
-		//
-		//			@Override
-		//			public void onSuccess(String arg0) {
-		//				// TODO Auto-generated method stub
-		//
-		//			}
-		//
-		//			@Override
-		//			public void onFailure(String arg0) {
-		//				// TODO Auto-generated method stub
-		//
-		//			}
-		//		});
 
 		KF5SDKConfig.INSTANCE.init(MainActivity.this,"tianxiang.kf5.com","111@kf5.com", 
 				"00155b5f81ac5a9318cd15ca21123187c1e381d1d7e577ca",new CallBack() {
@@ -48,12 +31,16 @@ public class MainActivity extends Activity {
 			public void onSuccess(String result) {
 				// TODO Auto-generated method stub
 				Toast.makeText(MainActivity.this, result, 1).show();
+				//保存推送对象的信息
+				KF5SDKConfig.INSTANCE.savePushToken(MainActivity.this, "080b14333c2");
 			}
 
 			@Override
 			public void onFailure(String result) {
 				// TODO Auto-generated method stub
 				Toast.makeText(MainActivity.this, result, 1).show();
+				//删除推送消息的信息，改方法在不需要接收推送消息的时候调用。
+//				KF5SDKConfig.INSTANCE.deletePushToken(MainActivity.this, "080b14333c2");
 			}
 		});
 
