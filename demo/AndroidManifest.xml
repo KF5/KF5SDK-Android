@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="10"
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -67,6 +67,10 @@
         </activity>
         <activity
             android:name="com.chosen.kf5sdk.ImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chosen.kf5sdk.OrderAttributeActivity"
             android:screenOrientation="portrait" >
         </activity>
     </application>

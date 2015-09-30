@@ -69,5 +69,7 @@
     <string name="title_activity_link_url">LinkUrlActivity</string>
     <string name="loading" translatable="false">加载数据中......</string>
     <string name="no_datas" translatable="false">没有更多数据了</string>
+    <string name="message_detail">详细信息</string>
+    <string name="ticket">工单</string>
 
 </resources>

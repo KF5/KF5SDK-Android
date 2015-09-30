@@ -24,5 +24,7 @@
     <color name="text_color">#72c7f6</color>
     <color name="normal_color">#8d8d8d</color>
     <color name="list_pull_back">#eeeeee</color>
+    <color name="table_deliver">#EEEEEE</color>
+    <color name="message_value_color">#818281</color>
 
 </resources>

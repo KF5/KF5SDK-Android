@@ -17,7 +17,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
+            android:contentDescription="@null"
             android:src="@drawable/back_img_bg" />
 
         <TextView
@@ -25,22 +27,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/img"
+            android:layout_toEndOf="@+id/return_img"
+            android:layout_toLeftOf="@+id/message_detail"
             android:layout_toRightOf="@+id/return_img"
-            android:ellipsize="end"
-            android:gravity="center"
+            android:layout_toStartOf="@+id/message_detail"
+            android:gravity="start"
             android:singleLine="true"
+            android:text="@string/ticket"
             android:textColor="@android:color/white"
             android:textSize="@dimen/text_xh_size" />
 
-        <ImageView
-            android:id="@+id/img"
+        <TextView
+            android:id="@+id/message_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/back_img_bg"
-            android:visibility="invisible" />
+            android:layout_marginEnd="@dimen/pending_eight"
+            android:layout_marginRight="@dimen/pending_eight"
+            android:text="@string/message_detail"
+            android:textColor="@drawable/text_bg"
+            android:textSize="@dimen/text_xh_size" />
     </RelativeLayout>
 
     <ListView

@@ -11,6 +11,14 @@
         android:orientation="horizontal"
         android:padding="@dimen/pending_one_two" >
 
+        <ImageView
+            android:id="@+id/look_feed_back_listitem_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/point"
+            android:contentDescription="@null" />
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
