@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
 //		});
 
 
-		KF5SDKConfig.INSTANCE.init(MainActivity.this, "joymay.kf5.com", "123456789@qq.com", "123456",
+		KF5SDKConfig.INSTANCE.initWithoutPW(MainActivity.this, "joymay.kf5.com", "56789@qq.com", "Ð¡¿É",
 				"00155f5851e24de5079262dda41816a9cd253e165ef799cf", new CallBack() {
 
 			@Override
