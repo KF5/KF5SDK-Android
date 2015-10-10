@@ -3,6 +3,7 @@ package com.example.demo;
 
 import com.kf5sdk.api.CallBack;
 import com.kf5sdk.init.KF5SDKConfig;
+import com.kf5sdk.init.UserInfo;
 import com.kf5sdk.model.HelpCenterType;
 
 import android.app.Activity;
@@ -24,45 +25,13 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		tv1 = (TextView) findViewById(R.id.activity_main_help_btn);
 
-//		KF5SDKConfig.INSTANCE.init(MainActivity.this,"tianxiang.kf5.com","111@kf5.com", 
-//				"00155b5f81ac5a9318cd15ca21123187c1e381d1d7e577ca",new CallBack() {
-//
-//			@Override
-//			public void onSuccess(String result) {
-//				// TODO Auto-generated method stub
-//				Toast.makeText(MainActivity.this, result, 1).show();
-//				//保存推送对象的信息
-//				KF5SDKConfig.INSTANCE.savePushToken(MainActivity.this, "080b14333c2");
-//			}
-//
-//			@Override
-//			public void onFailure(String result) {
-//				// TODO Auto-generated method stub
-//				Toast.makeText(MainActivity.this, result, 1).show();
-//				//删除推送消息的信息，改方法在不需要接收推送消息的时候调用。
-//				//				KF5SDKConfig.INSTANCE.deletePushToken(MainActivity.this, "080b14333c2");
-//			}
-//		});
-
-//		KF5SDKConfig.INSTANCE.init(MainActivity.this, "tianxiang.kf5.com", "123456789@qq.com", "1234567", 
-//				"00155bee6f7945ea5aa21c6ffc35f7aa7ed0999d7c6b6029", new CallBack() {
-//
-//			@Override
-//			public void onSuccess(String result) {
-//				// TODO Auto-generated method stub
-//
-//			}
-//
-//			@Override
-//			public void onFailure(String result) {
-//				// TODO Auto-generated method stub
-//
-//			}
-//		});
-
-
-		KF5SDKConfig.INSTANCE.initWithoutPW(MainActivity.this, "joymay.kf5.com", "56789@qq.com", "小可",
-				"00155f5851e24de5079262dda41816a9cd253e165ef799cf", new CallBack() {
+		UserInfo userInfo = new UserInfo();
+		userInfo.appId = "00155f5851e24de5079262dda41816a9cd253e165ef799cf";
+		userInfo.helpAddress = "joymay.kf5.com";
+		userInfo.email = "888888@qq.com";
+		//		userInfo.password = "1212356465";
+		//		userInfo.name = "科比1234";
+		KF5SDKConfig.INSTANCE.init(MainActivity.this, userInfo, new CallBack() {
 
 			@Override
 			public void onSuccess(String result) {
@@ -76,6 +45,7 @@ public class MainActivity extends Activity {
 
 			}
 		});
+
 
 		tv1.setOnClickListener(new OnClickListener() {
 
