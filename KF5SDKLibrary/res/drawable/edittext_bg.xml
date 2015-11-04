@@ -4,7 +4,7 @@
     <corners android:radius="@dimen/pending_eight" />
 
     <stroke
-        android:width="@dimen/pending_two"
+        android:width="@dimen/line_width"
         android:color="@color/et_line_bg" />
 
     <solid android:color="@android:color/white" />

@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
     tools:context="${relativePackage}.${activityClass}" >
 
     <RelativeLayout
@@ -35,7 +34,7 @@
             android:singleLine="true"
             android:text="@string/ticket"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/text_xh_size" />
+            android:textSize="@dimen/text_xxh_size" />
 
         <TextView
             android:id="@+id/message_detail"
@@ -46,6 +45,7 @@
             android:layout_centerVertical="true"
             android:layout_marginEnd="@dimen/pending_eight"
             android:layout_marginRight="@dimen/pending_eight"
+            android:padding="@dimen/pending_eight"
             android:text="@string/message_detail"
             android:textColor="@drawable/text_bg"
             android:textSize="@dimen/text_xh_size" />
@@ -57,115 +57,136 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_layout"
         android:layout_below="@+id/top_layout"
+        android:background="@android:color/white"
         android:divider="@android:color/white"
-        android:listSelector="@android:color/white" >
+        android:listSelector="@android:color/white"
+        android:transcriptMode="normal" >
     </ListView>
 
     <RelativeLayout
         android:id="@+id/bottom_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#ECEFF3" >
+        android:layout_alignParentBottom="true" >
 
         <RelativeLayout
-            android:id="@+id/send_content_layout"
+            android:id="@+id/send_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/pending_eight"
-            android:paddingLeft="@dimen/pending_four"
-            android:paddingRight="@dimen/pending_four"
-            android:paddingTop="@dimen/pending_eight"
-            android:visibility="visible" >
+            android:background="#eaedf4" >
 
-            <ImageView
-                android:id="@+id/activity_feed_back_choice_img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:padding="@dimen/pending_four"
-                android:src="@drawable/add_img" />
-
-            <TextView
-                android:id="@+id/activity_feed_back_submit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:padding="@dimen/pending_four"
-                android:text="@string/send"
-                android:textColor="@drawable/send_text_colordrawable"
-                android:textSize="@dimen/text_h_size" />
-
-            <EditText
-                android:id="@+id/activity_feed_back_content"
+            <RelativeLayout
+                android:id="@+id/send_content_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/pending_two"
-                android:layout_marginRight="@dimen/pending_two"
-                android:layout_toLeftOf="@+id/activity_feed_back_submit"
-                android:layout_toRightOf="@+id/activity_feed_back_choice_img"
-                android:background="@drawable/edittext_bg"
-                android:focusable="false"
-                android:hint="@string/input_please"
-                android:padding="@dimen/pending_eight"
-                android:singleLine="true" />
-        </RelativeLayout>
+                android:paddingBottom="@dimen/pending_two"
+                android:paddingLeft="@dimen/pending_four"
+                android:paddingRight="@dimen/pending_four"
+                android:paddingTop="@dimen/pending_two"
+                android:visibility="visible" >
 
-        <LinearLayout
-            android:id="@+id/image_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingBottom="@dimen/pending_one_two"
-            android:paddingLeft="@dimen/pending_four"
-            android:paddingRight="@dimen/pending_four"
-            android:paddingTop="@dimen/pending_one_two"
-            android:visibility="gone" >
-
-            <ImageView
-                android:id="@+id/activity_feed_back_select_img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/pending_four"
-                android:src="@drawable/choice_img_source" />
-
-            <ImageView
-                android:id="@+id/activity_feed_back_back_img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/pending_four"
-                android:src="@drawable/choice_img_back" />
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/pending_four"
-                android:scrollbars="none" >
-
-                <LinearLayout
-                    android:id="@+id/image_container_layout"
+                <ImageView
+                    android:id="@+id/activity_feed_back_choice_img"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal" >
-                </LinearLayout>
-            </HorizontalScrollView>
-        </LinearLayout>
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/pending_four"
+                    android:src="@drawable/add_img" />
+
+                <TextView
+                    android:id="@+id/activity_feed_back_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/pending_four"
+                    android:text="@string/send"
+                    android:textColor="@drawable/send_text_colordrawable"
+                    android:textSize="@dimen/text_h_size" />
+
+                <EditText
+                    android:id="@+id/activity_feed_back_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/pending_two"
+                    android:layout_marginRight="@dimen/pending_two"
+                    android:layout_toEndOf="@+id/activity_feed_back_choice_img"
+                    android:layout_toLeftOf="@+id/activity_feed_back_submit"
+                    android:layout_toRightOf="@+id/activity_feed_back_choice_img"
+                    android:layout_toStartOf="@+id/activity_feed_back_submit"
+                    android:background="@drawable/edittext_bg"
+                    android:focusable="false"
+                    android:hint="@string/input_content"
+                    android:padding="@dimen/pending_eight"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/pending_two"
+                android:paddingLeft="@dimen/pending_four"
+                android:paddingRight="@dimen/pending_four"
+                android:paddingTop="@dimen/pending_two"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/activity_feed_back_select_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/pending_four"
+                    android:src="@drawable/choice_img_source" />
+
+                <ImageView
+                    android:id="@+id/activity_feed_back_back_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/pending_four"
+                    android:src="@drawable/choice_img_back" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pending_four"
+                    android:layout_marginStart="@dimen/pending_four"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:id="@+id/image_container_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/activity_feed_back_replace_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/pending_eight"
+            android:layout_marginLeft="@dimen/pending_one_six"
+            android:layout_marginRight="@dimen/pending_one_six"
+            android:background="@drawable/footer_view_bg"
             android:gravity="center"
             android:paddingBottom="@dimen/pending_eight"
             android:paddingTop="@dimen/pending_eight"
             android:text="@string/order_closed"
-            android:textSize="@dimen/text_h_size"
+            android:textColor="#8b8b8b"
+            android:textSize="@dimen/text_l_size"
             android:visibility="gone" />
     </RelativeLayout>
 

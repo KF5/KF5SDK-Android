@@ -28,7 +28,7 @@
             android:singleLine="true"
             android:text="@string/message_detail"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/text_xh_size" />
+            android:textSize="@dimen/text_xxh_size" />
     </RelativeLayout>
 
     <ListView
@@ -36,7 +36,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/white"
-        android:listSelector="@android:color/white" >
+        android:dividerHeight="0dp"
+        android:divider="@android:color/white"
+        android:listSelector="@android:color/transparent" >
     </ListView>
 
 </LinearLayout>

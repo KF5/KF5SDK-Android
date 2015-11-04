@@ -8,42 +8,33 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/pending_one_two"
-        android:orientation="vertical" >
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/pending_one_six" >
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/help_list_item_title"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/pending_one_two"
-            android:paddingRight="@dimen/pending_one_two"
-            android:paddingTop="@dimen/pending_one_two" >
+            android:layout_marginLeft="@dimen/pending_four"
+            android:layout_marginStart="@dimen/pending_four"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@color/user_field_label_color"
+            android:textSize="@dimen/text_h_size" />
 
-            <TextView
-                android:id="@+id/help_list_item_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerVertical="true"
-                android:singleLine="true"
-                android:text="公告新闻"
-                android:layout_toLeftOf="@+id/img"
-                android:textColor="@color/list_item_text_color"
-                android:textSize="@dimen/text_h_size" />
-
-            <ImageView
-                android:id="@+id/img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:contentDescription="@null"
-                android:src="@drawable/jump_icon" />
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/line_width"
-            android:background="@color/line_color" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/jump_icon" />
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="@dimen/pending_two_zero"
+        android:layout_marginStart="@dimen/pending_two_zero"
+        android:background="@color/line_color" />
 
 </LinearLayout>

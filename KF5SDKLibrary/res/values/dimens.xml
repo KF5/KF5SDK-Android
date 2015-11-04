@@ -5,10 +5,15 @@
     <dimen name="text_l_size">16sp</dimen>
     <dimen name="text_h_size">18sp</dimen>
     <dimen name="text_xh_size">20sp</dimen>
+    <dimen name="text_xxh_size">22sp</dimen>
     <dimen name="pending_eight">8dp</dimen>
     <dimen name="pending_one_two">12dp</dimen>
     <dimen name="pending_three_two">32dp</dimen>
+    <dimen name="pending_four_eight">48dp</dimen>
+    <dimen name="pending_three_six">36dp</dimen>
     <dimen name="pending_one_six">16dp</dimen>
+    <dimen name="pending_two_zero">20dp</dimen>
+    <dimen name="pending_six">6dp</dimen>
     <dimen name="pending_two_four">24dp</dimen>
     <dimen name="pending_four">4dp</dimen>
     <dimen name="pending_two">2dp</dimen>

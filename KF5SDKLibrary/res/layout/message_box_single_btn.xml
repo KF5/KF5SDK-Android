@@ -20,6 +20,5 @@
             android:textColor="#ff0079ff"
             android:textSize="18.0sp"
             android:text="button" />
-    
 
 </LinearLayout>

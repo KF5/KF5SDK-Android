@@ -41,6 +41,7 @@
     <string name="submit">提交</string>
     <string name="cancel">取消</string>
     <string name="edittext_hint">请输入问题</string>
+    <string name="input_content">请输入内容</string>
 
     <!-- look_feed_back -->
     <string name="feed_back_list">反馈列表</string>
