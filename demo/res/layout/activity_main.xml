@@ -31,8 +31,8 @@
                 android:layout_height="wrap_content"
                 android:background="#F2F5F9"
                 android:orientation="vertical"
-                android:paddingBottom="@dimen/pending_four_eight"
-                android:paddingTop="@dimen/pending_four_eight" >
+                android:paddingBottom="@dimen/dimen_48dp"
+                android:paddingTop="@dimen/dimen_48dp" >
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -47,15 +47,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="44dp"
                     android:layout_marginStart="44dp"
-                    android:layout_marginTop="@dimen/pending_four"
+                    android:layout_marginTop="@dimen/dimen_4dp"
                     android:text="@string/home_to_remind"
                     android:textColor="#45d8d0"
                     android:textSize="@dimen/text_m_size" />
             </LinearLayout>
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/pending_four_eight" />
 
             <LinearLayout
                 android:id="@+id/help_center_layout"
@@ -64,22 +61,22 @@
                 android:background="@drawable/home_selected_bg"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/pending_one_six" >
+                android:padding="@dimen/dimen_16dp" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/pending_three_two"
-                    android:layout_marginStart="@dimen/pending_three_two"
+                    android:layout_marginLeft="@dimen/dimen_32dp"
+                    android:layout_marginStart="@dimen/dimen_32dp"
                     android:src="@drawable/help_center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/pending_one_six"
-                    android:layout_marginStart="@dimen/pending_one_six"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
                     android:text="帮助中心"
                     android:textColor="#424345"
                     android:textSize="@dimen/text_xxh_size" />
@@ -103,11 +100,11 @@
 
                 <View
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/line_width"
-                    android:layout_marginEnd="@dimen/pending_three_two"
-                    android:layout_marginLeft="@dimen/pending_one_six"
-                    android:layout_marginRight="@dimen/pending_three_two"
-                    android:layout_marginStart="@dimen/pending_one_six"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="@dimen/dimen_32dp"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_32dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
                     android:background="#dddddd" />
             </LinearLayout>
 
@@ -118,21 +115,21 @@
                 android:background="@drawable/home_selected_bg"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/pending_one_six" >
+                android:padding="@dimen/dimen_16dp" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/pending_three_two"
-                    android:layout_marginStart="@dimen/pending_three_two"
+                    android:layout_marginLeft="@dimen/dimen_32dp"
+                    android:layout_marginStart="@dimen/dimen_32dp"
                     android:src="@drawable/feed_back" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/pending_one_six"
-                    android:layout_marginStart="@dimen/pending_one_six"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
                     android:text="反馈问题"
                     android:textColor="#424345"
                     android:textSize="@dimen/text_xxh_size" />
@@ -155,11 +152,11 @@
 
                 <View
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/line_width"
-                    android:layout_marginEnd="@dimen/pending_three_two"
-                    android:layout_marginLeft="@dimen/pending_one_six"
-                    android:layout_marginRight="@dimen/pending_three_two"
-                    android:layout_marginStart="@dimen/pending_one_six"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="@dimen/dimen_32dp"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_32dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
                     android:background="#dddddd" />
             </LinearLayout>
 
@@ -170,21 +167,21 @@
                 android:background="@drawable/home_selected_bg"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/pending_one_six" >
+                android:padding="@dimen/dimen_16dp" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/pending_three_two"
-                    android:layout_marginStart="@dimen/pending_three_two"
+                    android:layout_marginLeft="@dimen/dimen_32dp"
+                    android:layout_marginStart="@dimen/dimen_32dp"
                     android:src="@drawable/look_feed_back" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/pending_one_six"
-                    android:layout_marginStart="@dimen/pending_one_six"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
                     android:text="查看反馈"
                     android:textColor="#424345"
                     android:textSize="@dimen/text_xxh_size" />
@@ -207,11 +204,63 @@
 
                 <View
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/line_width"
-                    android:layout_marginEnd="@dimen/pending_three_two"
-                    android:layout_marginLeft="@dimen/pending_one_six"
-                    android:layout_marginRight="@dimen/pending_three_two"
-                    android:layout_marginStart="@dimen/pending_one_six"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="@dimen/dimen_32dp"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_32dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:background="#dddddd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_selected_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_16dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_32dp"
+                    android:layout_marginStart="@dimen/dimen_32dp"
+                    android:src="@drawable/chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:text="即时交谈"
+                    android:textColor="#424345"
+                    android:textSize="@dimen/text_xxh_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:src="@drawable/help_center"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="@dimen/dimen_32dp"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_32dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
                     android:background="#dddddd" />
             </LinearLayout>
         </LinearLayout>

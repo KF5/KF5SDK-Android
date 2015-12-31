@@ -73,6 +73,24 @@
             android:name="com.chosen.kf5sdk.OrderAttributeActivity"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.kf5chat.ui.KF5ChatActivity"
+            android:label="@string/title_activity_demo"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.kf5chat.ui.GifViewActivity"
+            android:label="@string/title_activity_gif_view" >
+        </activity>
+        <activity
+            android:name="com.kf5chat.ui.ImageBrowerActivity"
+            android:label="@string/title_activity_image_brower" >
+        </activity>
+
+        <service
+            android:name="com.kf5chat.service.MessageService"
+            android:enabled="true" >
+        </service>
     </application>
 
 </manifest>

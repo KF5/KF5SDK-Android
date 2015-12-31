@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.kf5chat.view.CircleImageView
+        android:id="@+id/message_item_with_voice_head_img"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:contentDescription="@null"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/message_item_with_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/message_item_with_voice_head_img"
+        android:layout_marginEnd="@dimen/dimen_32dp"
+        android:layout_marginLeft="@dimen/dimen_4dp"
+        android:layout_marginRight="@dimen/dimen_32dp"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:layout_toEndOf="@+id/message_item_with_voice_head_img"
+        android:layout_toRightOf="@+id/message_item_with_voice_head_img"
+        android:background="@drawable/message_from_with_text_bg"
+        android:gravity="center_vertical|end"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
