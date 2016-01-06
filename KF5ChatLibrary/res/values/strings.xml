@@ -85,5 +85,7 @@
     <string name="no_datas" translatable="false">没有更多数据了</string>
     <string name="message_detail">详细信息</string>
     <string name="ticket">工单</string>
+    <string name="left">左图</string>
+    <string name="right">右图</string>
 
 </resources>

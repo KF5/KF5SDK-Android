@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:maskimage="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
@@ -23,7 +21,7 @@
         android:layout_marginStart="@dimen/dimen_4dp"
         android:layout_toEndOf="@+id/message_item_with_image_head_img"
         android:layout_toRightOf="@+id/message_item_with_image_head_img"
-        android:scaleType="fitXY"
-        maskimage:mask="@drawable/message_from_text_bg_nomal" />
+        android:contentDescription="@string/left"
+        android:scaleType="fitXY" />
 
 </RelativeLayout>

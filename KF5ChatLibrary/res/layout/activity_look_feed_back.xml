@@ -5,7 +5,7 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <RelativeLayout
-        android:id="@+id/top_layout"
+        android:id="@+id/look_feed_back_title_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -36,6 +36,7 @@
             android:textSize="@dimen/text_xh_size" />
 
         <TextView
+             android:id="@+id/look_feed_back_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -48,7 +49,7 @@
         android:id="@+id/look_feed_back_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/top_layout"
+        android:layout_below="@+id/look_feed_back_title_layout"
         android:background="@android:color/white"
         android:divider="@android:color/white"
         android:listSelector="@android:color/white" >
