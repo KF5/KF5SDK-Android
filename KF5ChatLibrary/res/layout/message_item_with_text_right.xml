@@ -51,8 +51,7 @@
             android:gravity="start|center"
             android:lineSpacingExtra="8dp"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/text_size_16"
-            >
+            android:textSize="@dimen/text_size_16" >
         </com.kf5chat.emoji.EmojiconTextView>
     </LinearLayout>
 

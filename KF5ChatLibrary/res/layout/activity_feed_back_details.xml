@@ -5,7 +5,7 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <RelativeLayout
-        android:id="@+id/top_layout"
+        android:id="@+id/feed_back_detail_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -22,7 +22,7 @@
             android:src="@drawable/back_img_bg" />
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/feed_back_detail_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_layout"
-        android:layout_below="@+id/top_layout"
+        android:layout_below="@+id/feed_back_detail_top_layout"
         android:background="@android:color/white"
         android:divider="@android:color/white"
         android:listSelector="@android:color/white"

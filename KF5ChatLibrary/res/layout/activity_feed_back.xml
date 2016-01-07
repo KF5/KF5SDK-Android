@@ -5,7 +5,7 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <RelativeLayout
-        android:id="@+id/top_layout"
+        android:id="@+id/feed_back_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -53,6 +53,7 @@
             android:textSize="@dimen/text_xh_size" />
 
         <TextView
+            android:id="@+id/feed_back_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -66,7 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_layout"
-        android:layout_below="@+id/top_layout"
+        android:layout_below="@+id/feed_back_top_layout"
         android:background="@null"
         android:focusable="false"
         android:gravity="top|start"

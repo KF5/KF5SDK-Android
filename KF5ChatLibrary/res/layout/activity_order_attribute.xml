@@ -5,6 +5,7 @@
     android:orientation="vertical" >
 
     <RelativeLayout
+        android:id="@+id/activity_order_attr_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/title_bar_bg" >
@@ -20,6 +21,7 @@
             android:src="@drawable/back_img_bg" />
 
         <TextView
+            android:id="@+id/activity_order_attr_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"

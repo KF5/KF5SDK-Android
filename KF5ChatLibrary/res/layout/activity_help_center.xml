@@ -6,6 +6,7 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <RelativeLayout
+        android:id="@+id/help_center_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/title_bar_bg" >
@@ -36,6 +37,7 @@
             android:ellipsize="middle"
             android:gravity="center"
             android:singleLine="true"
+            android:text="@string/area_list"
             android:textColor="@android:color/white"
             android:textSize="@dimen/text_xxh_size" />
 
