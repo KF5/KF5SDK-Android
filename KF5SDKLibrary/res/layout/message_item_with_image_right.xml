@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/dimen_8dp"
+    android:paddingTop="@dimen/dimen_8dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:background="@drawable/message_item_with_date_bg"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_14" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp">
+
+        <com.kf5sdk.view.CircleImageView
+            android:id="@+id/message_item_with_image_head_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:contentDescription="@null" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/message_item_with_image_head_img"
+            android:layout_marginEnd="@dimen/dimen_4dp"
+            android:layout_marginLeft="@dimen/dimen_32dp"
+            android:layout_marginRight="@dimen/dimen_4dp"
+            android:layout_marginStart="@dimen/dimen_32dp"
+            android:layout_toLeftOf="@+id/message_item_with_image_head_img"
+            android:layout_toStartOf="@+id/message_item_with_image_head_img"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/progress_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/dimen_4dp"
+                android:layout_marginRight="@dimen/dimen_4dp">
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.kf5sdk.view.MaskImage
+                android:id="@+id/message_item_with_image_content_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/right"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
