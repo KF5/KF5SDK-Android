@@ -2,33 +2,42 @@
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-
-
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-
-
-
+            backward-compatibility can go here.
         -->
     </style>
 
     <!-- Application theme. -->
+
     <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
         <item name="android:windowNoTitle">true</item>
     </style>
 
-  <!--  <style name="chat_text_date_style">
+    <style name="KF5AppTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+
+    <!--
+    <style name="chat_text_date_style">
         <item name="android:padding">2dp</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:textSize">12sp</item>
         <item name="android:background">@drawable/chat_send_time_bg</item>
-    </style>-->
+    </style>
+    -->
 
     <style name="chat_content_date_style">
         <item name="android:minHeight">50dp</item>
@@ -59,7 +68,7 @@
         <!-- 指定显示的动画xml -->
 <item name="android:windowEnterAnimation">@anim/listview_item_anim_right</item></string>
 
-    <style name="messagebox_style" parent="@android:style/Theme.Dialog">
+    <style name="kf5messagebox_style" parent="@android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>
@@ -71,16 +80,16 @@
         <!-- 模糊 -->
     </style>
 
-    <style name="mypopwindow_anim_style">
-        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+    <style name="kf5popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/kf5_popshow_anim</item>
         <!-- 指定显示的动画xml -->
 
-        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <item name="android:windowExitAnimation">@anim/kf5_pophidden_anim</item>
         <!-- 指定消失的动画xml -->
 
     </style>
 
-    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+    <style name="KF5ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
 
         <!-- 背景透明 -->
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -101,8 +110,8 @@
 
     <!-- ActionSheet进出动画 -->
     <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
-        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
-        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+        <item name="android:windowEnterAnimation">@anim/kf5_actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/kf5_actionsheet_dialog_out</item>
     </style>
 
 </resources>

@@ -35,36 +35,14 @@ public class MainActivity extends Activity {
 		activity = this;
 		UserInfo userInfo = new UserInfo();
 
-		userInfo.appId = "00155bee6f7945ea5aa21c6ffc35f7aa7ed0999d7c6b6029";
-		userInfo.helpAddress = "tianxiang.kf5.com";
+		userInfo.appId = "00155bxxx5exxxxa5aa21c6ffc35f7aa7ed0999d7c6b6029";
+		userInfo.helpAddress = "xxxxg.kf5.com";
 		userInfo.email = "12q33333@qq.com";
 		userInfo.deviceToken = "";
 		userInfo.name = "测试";
 
-//		userInfo.appId = "001568b75fe9011c77bee888a7c0a3123873d19b0bf3556a";
-//		userInfo.helpAddress = "ayooyoo.kf5.com";
-//		userInfo.email = "chenkai1@guanghe.tv";//user id
-//		userInfo.name = URLEncoder.encode("洋葱君");
-//		userInfo.sdkName = "什么叫sdkname";
 
-		//		userInfo.appId = "001557031a0dbe206eb28c60367f14c37c14498478aeef19";
-		//		userInfo.helpAddress = "fengyunjue.kf5.com";
-		//		userInfo.email = "123465@qq.com";
-		//		userInfo.deviceToken = JPushInterface.getRegistrationID(MainActivity.this);
-
-//				userInfo.appId = "00155f5851e24de5079262dda41816a9cd253e165ef799cf";
-//				userInfo.helpAddress = "joymay.kf5.com";
-//				userInfo.email = "12q33333@qq.com";
-
-		//		userInfo.appId = "001568a03c7a787d53843b257c612d196d9afec6fed04d7c";
-		//		userInfo.helpAddress = "wandoulabs.kf5.com";
-		//		userInfo.email = "12q33333@qq.com";
-		//		userInfo.password = "1212356465";
-		//		userInfo.name = "�Ʊ�1234";
-		//		userInfo.setAppId("001561e7d848e79f55a2e93c3b75024d39dcc1fc4f1cd6cf");
-		//		userInfo.setEmail("guest@kinglan.info");
-		//		userInfo.setHelpAddress("kinglan.kf5.com");
-		//		userInfo.setName("kcdhrss");
+		
 
 
 		KF5SDKConfig.INSTANCE.init(MainActivity.this, userInfo, new CallBack() {

@@ -8,11 +8,11 @@
         android:layout_height="52dp"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:background="@color/title_bar_bg"
+        android:background="@color/kf5_title_bar_bg"
         android:gravity="center"
-        android:text="@string/sdk_name"
+        android:text="@string/kf5_sdk_name"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/text_xh_size" />
+        android:textSize="@dimen/kf5_text_xh_size" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -26,33 +26,33 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#F2F5F9"
                 android:orientation="vertical"
-                android:paddingBottom="@dimen/dimen_48dp"
-                android:paddingTop="@dimen/dimen_48dp" >
+                android:paddingBottom="@dimen/kf5_dimen_48dp"
+                android:paddingTop="@dimen/kf5_dimen_48dp" >
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="44dp"
                     android:layout_marginStart="44dp"
-                    android:text="@string/home_to_use_sdk"
-                    android:textSize="@dimen/text_h_size" />
+                    android:text="@string/kf5_home_to_use_sdk"
+                    android:textSize="@dimen/kf5_text_h_size" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="44dp"
                     android:layout_marginStart="44dp"
-                    android:layout_marginTop="@dimen/dimen_4dp"
-                    android:text="@string/home_to_remind"
+                    android:layout_marginTop="@dimen/kf5_dimen_4dp"
+                    android:text="@string/kf5_home_to_remind"
                     android:textColor="#45d8d0"
-                    android:textSize="@dimen/text_m_size" />
+                    android:textSize="@dimen/kf5_text_m_size" />
             </LinearLayout>
-
 
             <LinearLayout
                 android:id="@+id/help_center_layout"
@@ -61,25 +61,25 @@
                 android:background="@drawable/home_selected_bg"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/dimen_16dp" >
+                android:padding="@dimen/kf5_dimen_16dp" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/dimen_32dp"
-                    android:layout_marginStart="@dimen/dimen_32dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_32dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_32dp"
                     android:src="@drawable/help_center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/dimen_16dp"
-                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_16dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_16dp"
                     android:text="帮助中心"
                     android:textColor="#424345"
-                    android:textSize="@dimen/text_xxh_size" />
+                    android:textSize="@dimen/kf5_text_xxh_size" />
             </LinearLayout>
 
             <LinearLayout
@@ -101,10 +101,10 @@
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
-                    android:layout_marginEnd="@dimen/dimen_32dp"
-                    android:layout_marginLeft="@dimen/dimen_16dp"
-                    android:layout_marginRight="@dimen/dimen_32dp"
-                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/kf5_dimen_32dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_16dp"
+                    android:layout_marginRight="@dimen/kf5_dimen_32dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_16dp"
                     android:background="#dddddd" />
             </LinearLayout>
 
@@ -115,24 +115,24 @@
                 android:background="@drawable/home_selected_bg"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/dimen_16dp" >
+                android:padding="@dimen/kf5_dimen_16dp" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/dimen_32dp"
-                    android:layout_marginStart="@dimen/dimen_32dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_32dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_32dp"
                     android:src="@drawable/feed_back" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dimen_16dp"
-                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_16dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_16dp"
                     android:text="反馈问题"
                     android:textColor="#424345"
-                    android:textSize="@dimen/text_xxh_size" />
+                    android:textSize="@dimen/kf5_text_xxh_size" />
             </LinearLayout>
 
             <LinearLayout
@@ -153,10 +153,10 @@
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
-                    android:layout_marginEnd="@dimen/dimen_32dp"
-                    android:layout_marginLeft="@dimen/dimen_16dp"
-                    android:layout_marginRight="@dimen/dimen_32dp"
-                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/kf5_dimen_32dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_16dp"
+                    android:layout_marginRight="@dimen/kf5_dimen_32dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_16dp"
                     android:background="#dddddd" />
             </LinearLayout>
 
@@ -167,21 +167,21 @@
                 android:background="@drawable/home_selected_bg"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/dimen_16dp" >
+                android:padding="@dimen/kf5_dimen_16dp" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/dimen_32dp"
-                    android:layout_marginStart="@dimen/dimen_32dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_32dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_32dp"
                     android:src="@drawable/look_feed_back" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dimen_16dp"
-                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_16dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_16dp"
                     android:text="查看反馈"
                     android:textColor="#424345"
                     android:textSize="@dimen/text_xxh_size" />
@@ -205,10 +205,10 @@
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
-                    android:layout_marginEnd="@dimen/dimen_32dp"
-                    android:layout_marginLeft="@dimen/dimen_16dp"
-                    android:layout_marginRight="@dimen/dimen_32dp"
-                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/kf5_dimen_32dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_16dp"
+                    android:layout_marginRight="@dimen/kf5_dimen_32dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_16dp"
                     android:background="#dddddd" />
             </LinearLayout>
 
@@ -219,24 +219,24 @@
                 android:background="@drawable/home_selected_bg"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:padding="@dimen/dimen_16dp" >
+                android:padding="@dimen/kf5_dimen_16dp" >
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="@dimen/dimen_32dp"
-                    android:layout_marginStart="@dimen/dimen_32dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_32dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_32dp"
                     android:src="@drawable/chat" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dimen_16dp"
-                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_16dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_16dp"
                     android:text="即时交谈"
                     android:textColor="#424345"
-                    android:textSize="@dimen/text_xxh_size" />
+                    android:textSize="@dimen/kf5_text_xxh_size" />
             </LinearLayout>
 
             <LinearLayout
@@ -257,10 +257,10 @@
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="1dp"
-                    android:layout_marginEnd="@dimen/dimen_32dp"
-                    android:layout_marginLeft="@dimen/dimen_16dp"
-                    android:layout_marginRight="@dimen/dimen_32dp"
-                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginEnd="@dimen/kf5_dimen_32dp"
+                    android:layout_marginLeft="@dimen/kf5_dimen_16dp"
+                    android:layout_marginRight="@dimen/kf5_dimen_32dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_16dp"
                     android:background="#dddddd" />
             </LinearLayout>
         </LinearLayout>
