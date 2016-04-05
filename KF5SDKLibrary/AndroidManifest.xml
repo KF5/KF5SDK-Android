@@ -8,25 +8,55 @@
         android:name="com.chosen.kf5sdk.LinkUrlActivity"
         android:hardwareAccelerated="true" >
     </activity>
-    <activity android:name="com.chosen.kf5sdk.FeedBackActivity" >
+    <activity
+        android:name="com.chosen.kf5sdk.FeedBackActivity"
+        android:configChanges="orientation|screenSize"
+        android:screenOrientation="portrait" >
     </activity>
-    <activity android:name="com.chosen.kf5sdk.FeedBackDetailsActivity" >
+    <activity
+        android:name="com.chosen.kf5sdk.FeedBackDetailsActivity"
+        android:configChanges="orientation|screenSize"
+        android:screenOrientation="portrait" >
     </activity>
-    <activity android:name="com.chosen.kf5sdk.HelpCenterActivity" >
+    <activity
+        android:name="com.chosen.kf5sdk.HelpCenterActivity"
+        android:configChanges="orientation|screenSize"
+        android:screenOrientation="portrait" >
     </activity>
-    <activity android:name="com.chosen.kf5sdk.HelpCenterTypeActivity" >
+    <activity
+        android:name="com.chosen.kf5sdk.HelpCenterTypeActivity"
+        android:configChanges="orientation|screenSize"
+        android:screenOrientation="portrait" >
     </activity>
-    <activity android:name="com.chosen.kf5sdk.HelpCenterTypeChildActivity" >
+    <activity
+        android:name="com.chosen.kf5sdk.HelpCenterTypeChildActivity"
+        android:configChanges="orientation|screenSize"
+        android:screenOrientation="portrait" >
     </activity>
     <activity
         android:name="com.chosen.kf5sdk.HelpCenterTypeDetailsActivity"
-        android:hardwareAccelerated="true" >
+        android:configChanges="orientation|screenSize"
+        android:hardwareAccelerated="true"
+        android:screenOrientation="portrait" >
     </activity>
-    <activity android:name="com.chosen.kf5sdk.LookFeedBackActivity" >
+    <activity
+        android:name="com.chosen.kf5sdk.LookFeedBackActivity"
+        android:configChanges="orientation|screenSize"
+        android:screenOrientation="portrait" >
     </activity>
-    <activity android:name="com.chosen.kf5sdk.ImagePagerActivity" >
+    <activity
+        android:name="com.chosen.kf5sdk.ImagePagerActivity"
+        android:configChanges="orientation|screenSize"
+        android:screenOrientation="portrait" >
     </activity>
-     <activity android:name="com.chosen.kf5sdk.KF5ChatActivity" >
+    <activity
+        android:name="com.chosen.kf5sdk.KF5ChatActivity"
+        android:configChanges="orientation|screenSize"
+        android:screenOrientation="portrait" >
     </activity>
+
+    <service
+        android:name="com.kf5chat.service.MessageService"
+        android:enabled="true" />
 
 </manifest>
