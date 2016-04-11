@@ -88,4 +88,11 @@
     <string name="kf5_right">右图</string>
     <string name="kf5_rating_content">感谢使用我们的服务,请为此次服务评价:</string>
 
+    <!-- 录音提示相关 -->
+    <string name="kf5_voice_normal">按住 说话</string>
+    <string name="kf5_voice_recording">松开 结束</string>
+    <string name="kf5_want_to_cancle">松开手指，取消发送</string>
+    <string name="kf5_up_to_cancel">手指上滑，取消发送</string>
+    <string name="kf5_voice_time_hort">录音时间过短</string>
+
 </resources>

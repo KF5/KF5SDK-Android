@@ -54,8 +54,7 @@
         android:divider="@null"
         android:fadingEdge="none"
         android:fastScrollEnabled="true"
-        android:listSelector="@android:color/transparent"
-        android:paddingBottom="@dimen/kf5_dimen_16dp" />
+        android:listSelector="@android:color/transparent" />
 
     <LinearLayout
         android:id="@+id/rl_bottom"
@@ -63,6 +62,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -80,26 +84,19 @@
                 android:contentDescription="@null"
                 android:src="@drawable/kf5_chat_by_voice" />
 
-            <RelativeLayout
-                android:id="@+id/kf5_layout_voice"
+            <com.kf5sdk.view.AudioRecordButton
+                android:id="@+id/kf5_recordButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginEnd="@dimen/kf5_dimen_2dp"
-                android:layout_marginRight="@dimen/kf5_dimen_2dp"
                 android:layout_weight="1"
-                android:background="@drawable/kf5_voice_layout_bg"
-                android:visibility="gone" >
-
-                <TextView
-                    android:id="@+id/kf5_voice_hint_textview"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="@string/kf5_hold_on_and_say_something"
-                    android:textColor="@color/kf5_voice_text_color"
-                    android:textSize="@dimen/kf5_text_size_18" />
-            </RelativeLayout>
+                android:background="@drawable/kf5_button_recordnormal"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:text="@string/kf5_voice_normal"
+                android:textColor="@color/kf5_voice_text_color"
+                android:visibility="gone" />
 
             <RelativeLayout
                 android:id="@+id/kf5_layout_edittext_and_emoji"
@@ -119,8 +116,8 @@
                     android:layout_toStartOf="@+id/kf5_chat_by_emoji"
                     android:background="@null"
                     android:gravity="start|center"
-                    android:maxLines="5"
                     android:lineSpacingExtra="@dimen/kf5_dimen_4dp"
+                    android:maxLines="5"
                     android:minHeight="40dp"
                     android:textSize="@dimen/kf5_text_size_16" />
 
