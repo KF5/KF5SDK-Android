@@ -47,7 +47,7 @@
             android:paddingBottom="@dimen/kf5_dimen_16dp"
             android:paddingTop="@dimen/kf5_dimen_16dp">
 
-            <com.kf5sdk.view.SelectableTextView
+            <TextView
                 android:id="@+id/kf5_feed_back_detail_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

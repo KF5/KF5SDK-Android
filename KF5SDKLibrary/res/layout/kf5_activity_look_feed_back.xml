@@ -2,14 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    tools:context="${relativePackage}.${activityClass}">
 
     <RelativeLayout
         android:id="@+id/kf5_look_feed_back_title_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@color/kf5_title_bar_bg" >
+        android:background="@color/kf5_title_bar_bg">
 
         <ImageView
             android:id="@+id/kf5_return_img"
@@ -36,7 +36,7 @@
             android:textSize="@dimen/kf5_text_xh_size" />
 
         <TextView
-             android:id="@+id/kf5_look_feed_back_title"
+            android:id="@+id/kf5_look_feed_back_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -45,6 +45,7 @@
             android:textSize="@dimen/kf5_text_xxh_size" />
     </RelativeLayout>
 
+
     <com.kf5sdk.view.RefreshListView
         android:id="@+id/kf5_look_feed_back_listview"
         android:layout_width="match_parent"
@@ -52,7 +53,24 @@
         android:layout_below="@+id/kf5_look_feed_back_title_layout"
         android:background="@android:color/white"
         android:divider="@android:color/white"
-        android:listSelector="@android:color/white" >
-    </com.kf5sdk.view.RefreshListView>
+        android:listSelector="@android:color/white"
+        android:overScrollMode="never" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kf5_look_feed_back_title_layout"
+        android:layout_marginTop="@dimen/kf5_dimen_16dp">
+
+        <TextView
+            android:id="@+id/kf5_look_feed_back_reminder_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/kf5_no_feed_back"
+            android:textColor="@color/kf5_message_value_color"
+            android:visibility="gone" />
+
+    </FrameLayout>
 
 </RelativeLayout>

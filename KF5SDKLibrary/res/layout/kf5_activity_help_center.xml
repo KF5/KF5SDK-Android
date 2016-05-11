@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="${relativePackage}.${activityClass}" >
+    tools:context="${relativePackage}.${activityClass}">
 
     <RelativeLayout
         android:id="@+id/kf5_help_center_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/kf5_title_bar_bg" >
+        android:background="@color/kf5_title_bar_bg">
 
         <ImageView
             android:id="@+id/kf5_return_img"
@@ -60,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/kf5_search_bg"
-        android:padding="@dimen/kf5_dimen_8dp" >
+        android:padding="@dimen/kf5_dimen_8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,7 +68,7 @@
             android:background="@drawable/kf5_user_search_bg"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="@dimen/kf5_dimen_8dp" >
+            android:padding="@dimen/kf5_dimen_8dp">
 
             <LinearLayout
                 android:id="@+id/kf5_serch_reminder_layout"
@@ -76,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:visibility="visible" >
+                android:visibility="visible">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -98,7 +98,7 @@
                 android:id="@+id/kf5_search_layout_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone" >
+                android:visibility="gone">
 
                 <EditText
                     android:id="@+id/kf5_search_content_edittext"
@@ -131,7 +131,7 @@
         android:background="@android:color/white"
         android:divider="@android:color/white"
         android:listSelector="@android:color/white"
-        android:visibility="visible" >
-    </ListView>
+        android:overScrollMode="never"
+        android:visibility="visible"/>
 
 </LinearLayout>

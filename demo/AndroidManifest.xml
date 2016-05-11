@@ -126,6 +126,12 @@
             android:screenOrientation="portrait" >
         </activity>
 
+        <activity
+            android:name="com.kf5sdk.image.ImageSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        
         <service
             android:name="com.kf5chat.service.MessageService"
             android:enabled="true" >

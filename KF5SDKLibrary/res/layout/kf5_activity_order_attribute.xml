@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/kf5_activity_order_attr_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/kf5_title_bar_bg" >
+        android:background="@color/kf5_title_bar_bg">
 
         <ImageView
             android:id="@+id/kf5_activity_order_attr_return_img"
@@ -38,9 +38,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/white"
-        android:dividerHeight="0dp"
         android:divider="@android:color/white"
-        android:listSelector="@android:color/transparent" >
-    </ListView>
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="never"/>
 
 </LinearLayout>

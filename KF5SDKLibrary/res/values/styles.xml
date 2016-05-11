@@ -1,16 +1,5 @@
 <resources>
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-    </style>
 
     <!-- Application theme. -->
 
@@ -30,14 +19,6 @@
         <item name="android:windowShowWallpaper">true</item>
     </style>
 
-    <!--
-    <style name="chat_text_date_style">
-        <item name="android:padding">2dp</item>
-        <item name="android:textColor">#ffffff</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:background">@drawable/chat_send_time_bg</item>
-    </style>
-    -->
 
     <style name="chat_content_date_style">
         <item name="android:minHeight">50dp</item>
@@ -113,8 +94,8 @@
         <item name="android:windowEnterAnimation">@anim/kf5_actionsheet_dialog_in</item>
         <item name="android:windowExitAnimation">@anim/kf5_actionsheet_dialog_out</item>
     </style>
-    
-      <!-- 设置弹出窗口的属性，frame叠加，isfloat是否浮动，tarnslucent是否半透明，dim是背景是否变暗 -->
+
+    <!-- 设置弹出窗口的属性，frame叠加，isfloat是否浮动，tarnslucent是否半透明，dim是背景是否变暗 -->
     <style name="KF5Theme_audioDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowFrame">@null</item>
@@ -122,7 +103,12 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
-    
-    
+
+  
+
+    <style name="KF5FileListPopAnim">
+        <item name="android:windowEnterAnimation">@anim/kf5_file_list_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/kf5_file_list_slide_out</item>
+    </style>
 
 </resources>

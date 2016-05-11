@@ -94,5 +94,15 @@
     <string name="kf5_want_to_cancle">松开手指，取消发送</string>
     <string name="kf5_up_to_cancel">手指上滑，取消发送</string>
     <string name="kf5_voice_time_hort">录音时间过短</string>
+    <string name="kf5_no_feed_back">没有工单反馈信息</string>
+
+    <!-- 图片选择相关 -->
+    <string name="kf5_tip_take_photo">拍摄照片</string>
+    <string name="kf5_action_done">完成</string>
+    <string name="kf5_folder_all">所有照片</string>
+    <string name="kf5_msg_no_camera">没有系统相机</string>
+    <string name="kf5_msg_amount_limit">最大图片数量不能超过%1$s张</string>
+    <string name="kf5_photo_unit">张</string>
+    <string name="kf5_image_selector_activity_title">图片选择</string>
 
 </resources>

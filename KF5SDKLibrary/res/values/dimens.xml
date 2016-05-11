@@ -13,6 +13,7 @@
     <dimen name="kf5_dimen_20dp">20dp</dimen>
     <dimen name="kf5_dimen_8dp">8dp</dimen>
     <dimen name="kf5_dimen_2dp">2dp</dimen>
+    <dimen name="kf5_text_size_12">12sp</dimen>
     <dimen name="kf5_text_size_14">14sp</dimen>
     <dimen name="kf5_text_size_16">16sp</dimen>
     <dimen name="kf5_text_size_18">18sp</dimen>
@@ -31,5 +32,10 @@
     <dimen name="kf5_text_xh_size">20sp</dimen>
     <dimen name="kf5_dimen_150dp">150dp</dimen>
     <dimen name="kf5_text_xxh_size">22sp</dimen>
+    <dimen name="kf5_image_size">120dp</dimen>
+    <dimen name="kf5_space_size">2dp</dimen>
+    <dimen name="kf5_folder_cover_size">72dp</dimen>
+    <dimen name="kf5_activity_horizontal_margin">16dp</dimen>
+    <dimen name="kf5_activity_vertical_margin">16dp</dimen>
 
 </resources>
