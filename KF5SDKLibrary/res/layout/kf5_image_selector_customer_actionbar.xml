@@ -14,6 +14,7 @@
         android:src="@drawable/kf5_back_img_bg" />
 
     <TextView
+        android:id="@+id/kf5_selector_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -37,7 +38,7 @@
         android:paddingRight="@dimen/kf5_dimen_12dp"
         android:paddingTop="@dimen/kf5_dimen_6dp"
         android:text="@string/kf5_action_done"
-        android:textColor="@color/kf5_list_folder_tv_submit_text_color"
+        android:textColor="@drawable/kf5_list_folder_tv_submit_text_color"
         android:textSize="@dimen/kf5_text_size_14" />
 
 </RelativeLayout>

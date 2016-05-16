@@ -43,6 +43,7 @@
             android:layout_toRightOf="@+id/kf5_message_item_with_voice_head_img"
             android:background="@drawable/kf5_message_from_with_text_bg"
             android:gravity="center_vertical|end"
+            android:textSize="@dimen/kf5_text_size_16"
             android:textColor="@android:color/black" />
 
         <ProgressBar

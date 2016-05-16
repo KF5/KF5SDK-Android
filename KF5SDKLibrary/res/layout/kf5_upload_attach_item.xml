@@ -17,6 +17,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:contentDescription="@null"
+            android:maxHeight="@dimen/kf5_dimen_16dp"
+            android:maxWidth="@dimen/kf5_dimen_16dp"
             android:src="@drawable/kf5_image_type" />
 
         <TextView

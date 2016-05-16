@@ -3,5 +3,5 @@
 
     <string name="app_name">demo</string>
     <string name="hello_world">Hello world!</string>
-
+	<color name="white">#f0f0f0</color>
 </resources>
