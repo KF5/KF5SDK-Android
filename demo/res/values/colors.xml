@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="et_content_text_color">#3c9bd2</color>
+    <color name="et_hint_text_color">#f01e1e</color>
+</resources>

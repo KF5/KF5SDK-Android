@@ -2,14 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}">
+    tools:context="${relativePackage}.${activityClass}" >
 
     <RelativeLayout
         android:id="@+id/kf5_feed_back_detail_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@color/kf5_title_bar_bg">
+        android:background="@color/kf5_title_bar_bg" >
 
         <ImageView
             android:id="@+id/kf5_return_img"
@@ -48,6 +48,7 @@
             android:padding="@dimen/kf5_dimen_8dp"
             android:text="@string/kf5_message_detail"
             android:textColor="@drawable/kf5_text_bg"
+            android:gravity="center"
             android:textSize="@dimen/kf5_text_xh_size" />
     </RelativeLayout>
 
@@ -61,19 +62,19 @@
         android:divider="@android:color/white"
         android:listSelector="@android:color/white"
         android:overScrollMode="never"
-        android:transcriptMode="normal"/>
+        android:transcriptMode="normal" />
 
     <RelativeLayout
         android:id="@+id/bottom_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true" >
 
         <RelativeLayout
             android:id="@+id/kf5_send_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#eaedf4">
+            android:background="#eaedf4" >
 
             <RelativeLayout
                 android:id="@+id/kf5_send_content_layout"
@@ -83,7 +84,7 @@
                 android:paddingLeft="@dimen/kf5_dimen_4dp"
                 android:paddingRight="@dimen/kf5_dimen_4dp"
                 android:paddingTop="@dimen/kf5_dimen_2dp"
-                android:visibility="visible">
+                android:visibility="visible" >
 
                 <ImageView
                     android:id="@+id/kf5_activity_feed_back_choice_img"
@@ -123,7 +124,10 @@
                     android:focusable="false"
                     android:hint="@string/kf5_input_content"
                     android:padding="@dimen/kf5_dimen_8dp"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:textColor="@color/kf5_et_content_text_color"
+                    android:textColorHint="@color/kf5_et_hint_text_color"
+                    android:textSize="@dimen/kf5_text_size_18" />
             </RelativeLayout>
 
             <LinearLayout
@@ -137,7 +141,7 @@
                 android:paddingLeft="@dimen/kf5_dimen_4dp"
                 android:paddingRight="@dimen/kf5_dimen_4dp"
                 android:paddingTop="@dimen/kf5_dimen_2dp"
-                android:visibility="gone">
+                android:visibility="gone" >
 
                 <ImageView
                     android:id="@+id/kf5_activity_feed_back_select_img"
@@ -160,13 +164,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/kf5_dimen_4dp"
                     android:layout_marginStart="@dimen/kf5_dimen_4dp"
-                    android:scrollbars="none">
+                    android:scrollbars="none" >
 
                     <LinearLayout
                         android:id="@+id/kf5_image_container_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"/>
+                        android:orientation="horizontal" />
                 </HorizontalScrollView>
             </LinearLayout>
         </RelativeLayout>

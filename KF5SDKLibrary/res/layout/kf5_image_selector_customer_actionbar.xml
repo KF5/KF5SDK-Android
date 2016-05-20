@@ -31,6 +31,7 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="@dimen/kf5_dimen_12dp"
         android:background="@drawable/kf5_action_btn"
+        android:gravity="center"
         android:minHeight="1dp"
         android:minWidth="1dp"
         android:paddingBottom="@dimen/kf5_dimen_6dp"

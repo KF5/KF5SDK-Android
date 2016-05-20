@@ -39,5 +39,6 @@
     <color name="kf5_image_selector_background_color">#181819</color>
     <color name="kf5_image_selctor_text_color">#232323</color>
     <color name="kf5_folder_item_text_color">#AFAFAF</color>
-
+	<color name="kf5_et_content_text_color">#212121</color>
+	<color name="kf5_et_hint_text_color">#6c6c6c</color>
 </resources>

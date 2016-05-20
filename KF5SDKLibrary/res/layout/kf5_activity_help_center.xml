@@ -53,6 +53,7 @@
             android:padding="@dimen/kf5_dimen_8dp"
             android:text="@string/kf5_connect_us"
             android:textColor="@drawable/kf5_text_bg"
+            android:gravity="center"
             android:textSize="@dimen/kf5_text_xh_size" />
     </RelativeLayout>
 

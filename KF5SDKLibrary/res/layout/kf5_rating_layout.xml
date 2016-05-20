@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/kf5_dialog_box_bg"
     android:orientation="vertical"
-    android:padding="16dp">
-
+    android:padding="16dp" >
 
     <TextView
         android:layout_width="match_parent"
@@ -22,9 +21,12 @@
     <TextView
         android:id="@+id/kf5_dialogText"
         android:layout_width="match_parent"
-        android:layout_height="25.0dip"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:gravity="center"
+        android:maxLines="3"
+        android:minLines="1"
+        android:minWidth="240dp"
         android:text="@string/kf5_rating_content"
         android:textColor="#ff000000"
         android:textSize="18.0sp" />
@@ -36,11 +38,9 @@
         android:background="@drawable/kf5_chat_messagebox_single_btn"
         android:gravity="center"
         android:padding="@dimen/kf5_dimen_12dp"
-        android:singleLine="true"
         android:text="满意"
         android:textColor="#ff0079ff"
         android:textSize="16.0sp" />
-
 
     <TextView
         android:id="@+id/kf5_rating_unsatisfied"
@@ -54,7 +54,6 @@
         android:textColor="#ff0079ff"
         android:textSize="16.0sp" />
 
-
     <TextView
         android:id="@+id/kf5_rating_cancel"
         android:layout_width="match_parent"
@@ -66,6 +65,5 @@
         android:text="取消"
         android:textColor="#ff0079ff"
         android:textSize="16.0sp" />
-
 
 </LinearLayout>

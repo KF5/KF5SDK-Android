@@ -39,8 +39,9 @@
             android:layout_centerVertical="true"
             android:layout_marginEnd="@dimen/kf5_dimen_12dp"
             android:layout_marginRight="@dimen/kf5_dimen_12dp"
+            android:gravity="center"
             android:text="@string/kf5_ticket"
-            android:textColor="@android:color/white"
+            android:textColor="@drawable/kf5_text_bg"
             android:textSize="20sp" />
     </RelativeLayout>
 
