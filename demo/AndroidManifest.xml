@@ -50,7 +50,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
+      <activity
             android:name="com.chosen.kf5sdk.ImageBrowerActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
@@ -135,7 +135,7 @@
         <service
             android:name="com.kf5chat.service.MessageService"
             android:enabled="true" >
-        </service>
+        </service> 
     </application>
 
 </manifest>

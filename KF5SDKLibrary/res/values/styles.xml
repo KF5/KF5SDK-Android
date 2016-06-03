@@ -1,11 +1,10 @@
 <resources>
 
-
     <!-- Application theme. -->
 
-    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+   <!-- <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>
-    </style>
+    </style>-->
 
     <style name="KF5AppTheme" parent="@android:style/Theme.DeviceDefault.Light">
         <item name="android:windowNoTitle">true</item>
@@ -16,7 +15,7 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">false</item>
-        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:windowShowWallpaper">false</item>
     </style>
 
 
@@ -31,8 +30,6 @@
         <item name="android:background">#bfbfbf</item>
     </style>
 
-    <style name="Widget.GifView" parent="@android:style/Widget"></style>
-
     <style name="voice_record_style" parent="@android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFrame">@null</item>
@@ -44,10 +41,6 @@
         <item name="android:backgroundDimEnabled">true</item>
         <!-- 模糊 -->
     </style>
-
-    <string name="listview_anim_style">
-        <!-- 指定显示的动画xml -->
-<item name="android:windowEnterAnimation">@anim/listview_item_anim_right</item></string>
 
     <style name="kf5messagebox_style" parent="@android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
@@ -103,8 +96,6 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
-
-  
 
     <style name="KF5FileListPopAnim">
         <item name="android:windowEnterAnimation">@anim/kf5_file_list_slide_in</item>

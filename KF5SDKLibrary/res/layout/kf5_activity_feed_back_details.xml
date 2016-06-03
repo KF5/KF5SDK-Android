@@ -56,7 +56,7 @@
         android:id="@+id/kf5_activity_feed_back_details_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_layout"
+        android:layout_above="@+id/kf5_bottom_layout"
         android:layout_below="@+id/kf5_feed_back_detail_top_layout"
         android:background="@android:color/white"
         android:divider="@android:color/white"
@@ -65,10 +65,12 @@
         android:transcriptMode="normal" />
 
     <RelativeLayout
-        android:id="@+id/bottom_layout"
+        android:id="@+id/kf5_bottom_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" >
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentBottom="true" ><!--
 
         <RelativeLayout
             android:id="@+id/kf5_send_layout"
@@ -191,6 +193,6 @@
             android:textColor="#8b8b8b"
             android:textSize="@dimen/kf5_text_l_size"
             android:visibility="gone" />
-    </RelativeLayout>
+    --></RelativeLayout>
 
 </RelativeLayout>

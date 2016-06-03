@@ -1,15 +1,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="${relativePackage}.${activityClass}">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/kf5_help_center_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/kf5_title_bar_bg">
+
 
         <ImageView
             android:id="@+id/kf5_return_img"
@@ -50,19 +49,20 @@
             android:layout_centerVertical="true"
             android:layout_marginEnd="@dimen/kf5_dimen_8dp"
             android:layout_marginRight="@dimen/kf5_dimen_8dp"
+            android:gravity="center"
             android:padding="@dimen/kf5_dimen_8dp"
             android:text="@string/kf5_connect_us"
             android:textColor="@drawable/kf5_text_bg"
-            android:gravity="center"
             android:textSize="@dimen/kf5_text_xh_size" />
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/kf5_search_layout_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/kf5_search_bg"
-        android:padding="@dimen/kf5_dimen_8dp">
-
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content" >
+        <!--
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
                     android:src="@drawable/kf5_content_delete" />
             </RelativeLayout>
         </LinearLayout>
-    </RelativeLayout>
+    --></RelativeLayout>
 
     <ListView
         android:id="@+id/kf5_help_center_listview"
@@ -133,6 +133,6 @@
         android:divider="@android:color/white"
         android:listSelector="@android:color/white"
         android:overScrollMode="never"
-        android:visibility="visible"/>
+        android:visibility="visible" />
 
 </LinearLayout>

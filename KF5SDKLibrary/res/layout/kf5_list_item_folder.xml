@@ -6,7 +6,7 @@
     android:background="@android:color/white"
     android:orientation="horizontal"
     android:paddingBottom="@dimen/kf5_dimen_10dp"
-    android:paddingTop="@dimen/kf5_dimen_10dp" >
+    android:paddingTop="@dimen/kf5_dimen_10dp">
 
     <ImageView
         android:id="@+id/kf5_image_cover"
@@ -15,8 +15,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="@dimen/kf5_dimen_12dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/kf5_default_error"
-        tools:src="@drawable/btn_back" />
+        android:src="@drawable/kf5_default_error" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +25,7 @@
         android:layout_marginLeft="@dimen/kf5_dimen_16dp"
         android:layout_toLeftOf="@+id/kf5_file_indicator"
         android:layout_toRightOf="@+id/kf5_image_cover"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/kf5_file_name"

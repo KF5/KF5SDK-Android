@@ -13,7 +13,7 @@
         android:padding="@dimen/kf5_dimen_16dp" >
 
         <TextView
-            android:id="@+id/kf5_help_list_item_title"
+            android:id="@id/kf5_help_list_item_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/kf5_dimen_4dp"

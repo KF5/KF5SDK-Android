@@ -13,7 +13,7 @@
         android:layout_marginStart="@dimen/kf5_dimen_4dp">
 
         <ProgressBar
-            android:id="@+id/kf5_progressBar"
+            android:id="@id/kf5_progressBar"
             style="?android:attr/progressBarStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
             android:visibility="visible" />
 
         <ImageView
-            android:id="@+id/kf5_feed_back_detail_failed_image"
+            android:id="@id/kf5_feed_back_detail_failed_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -48,20 +48,20 @@
             android:paddingTop="@dimen/kf5_dimen_16dp">
 
             <TextView
-                android:id="@+id/kf5_feed_back_detail_content"
+                android:id="@id/kf5_feed_back_detail_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/kf5_look_feed_back_list_item_title_color"
                 android:textSize="@dimen/kf5_text_h_size" />
 
             <com.kf5sdk.view.NoScrollGridView
-                android:id="@+id/kf5_feed_back_detai_grid_view"
+                android:id="@id/kf5_feed_back_detai_grid_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/kf5_dimen_16dp"
-                android:horizontalSpacing="8dp"
+                android:horizontalSpacing="@dimen/kf5_dimen_2dp"
                 android:numColumns="3"
-                android:verticalSpacing="8dp"
+                android:verticalSpacing="@dimen/kf5_dimen_2dp"
                 android:visibility="gone" />
 
             <LinearLayout
@@ -71,7 +71,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/kf5_feed_back_detail_date"
+                    android:id="@id/kf5_feed_back_detail_date"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -81,7 +81,7 @@
                     android:textSize="@dimen/kf5_text_l_size" />
 
                 <TextView
-                    android:id="@+id/kf5_feed_back_detail_name"
+                    android:id="@id/kf5_feed_back_detail_name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

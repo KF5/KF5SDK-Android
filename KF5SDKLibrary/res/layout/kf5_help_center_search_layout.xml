@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kf5_user_search_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/kf5_dimen_8dp">
+
+        <LinearLayout
+            android:id="@+id/kf5_serch_reminder_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/kf5_img_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/kf5_search"
+                android:textColor="#818181"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/kf5_search_layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/kf5_search_content_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/kf5_search_hint"
+                android:imeOptions="actionSearch"
+                android:padding="@dimen/kf5_dimen_2dp"
+                android:singleLine="true"
+                android:textSize="@dimen/kf5_text_l_size" />
+
+            <ImageView
+                android:id="@+id/kf5_img_delete_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="2dp"
+                android:src="@drawable/kf5_content_delete" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

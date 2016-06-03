@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!--自定义UI特定id-->
+<resources>
+
+    <!--帮助中心适配器id资源-->
+    <!--item中title的id ,类型TextView-->
+    <item name="kf5_help_list_item_title" type="id" />
+
+
+    <!--反馈列表适配器id集-->
+    <!--反馈列表适配器中未读消息红点id，类型ImageView-->
+    <item name="kf5_look_feed_back_listitem_update" type="id" />
+    <!--反馈列表适配器中标题id，类型TextView-->
+    <item name="kf5_look_feed_back_listitem_title" type="id" />
+    <!--反馈列表适配器中更新时间id，类型TextView-->
+    <item name="kf5_look_feed_back_listitem_date" type="id" />
+    <!--反馈列表适配器中工单状态id，类型TextView-->
+    <item name="kf5_look_feed_back_listitem_statu" type="id" />
+
+
+    <!-- 反馈详情适配器id集-->
+    <!--回复工单时显示的进度条，类型ProgressBar-->
+    <item name="kf5_progressBar" type="id" />
+    <!--回复工单失败时显示失败状态的图片，类型ImageView-->
+    <item name="kf5_feed_back_detail_failed_image" type="id" />
+    <!--工单回复的内容，类型TextView-->
+    <item name="kf5_feed_back_detail_content" type="id" />
+    <!--工单回复显示图片的GridView，类型com.kf5sdk.view.NoScrollGridView-->
+    <item name="kf5_feed_back_detai_grid_view" type="id" />
+    <!--工单回复时间，类型TextView-->
+    <item name="kf5_feed_back_detail_date" type="id" />
+    <!--工单回复人的昵称，类型TextView-->
+    <item name="kf5_feed_back_detail_name" type="id" />
+
+
+    <!--工单详情适配器id集-->
+    <!--工单详情Label，类型TextView-->
+    <item name="kf5_user_field_name" type="id" />
+    <!--工单详情Value，类型TextView-->
+    <item name="kf5_user_field_value" type="id" />
+
+</resources>
