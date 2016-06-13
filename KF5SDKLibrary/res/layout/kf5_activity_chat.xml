@@ -3,30 +3,32 @@
     android:id="@+id/kf5_root_view"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/kf5_title_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/kf5_title_bar_bg" >
+        android:background="@color/kf5_title_bar_bg"
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/kf5_return_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
             android:contentDescription="@null"
             android:src="@drawable/kf5_back_img_bg"
             android:visibility="visible" />
 
         <TextView
             android:id="@+id/kf5_textview_agent_name"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
             android:textColor="@android:color/white"
             android:textSize="20sp" />
 
@@ -34,138 +36,212 @@
             android:id="@+id/kf5_textview_ticket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/kf5_dimen_12dp"
-            android:layout_marginRight="@dimen/kf5_dimen_12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/kf5_dimen_6dp"
+            android:layout_marginRight="@dimen/kf5_dimen_6dp"
             android:gravity="center"
             android:text="@string/kf5_ticket"
             android:textColor="@drawable/kf5_text_bg"
             android:textSize="20sp" />
-    </RelativeLayout>
+    </LinearLayout>
 
     <com.kf5sdk.view.ChatListView
         android:id="@+id/kf5_listview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@android:color/transparent"
+        android:background="#eaebeb"
         android:cacheColorHint="#0000"
         android:divider="@null"
         android:fadingEdge="none"
         android:fastScrollEnabled="true"
         android:listSelector="@android:color/transparent" />
 
+
     <LinearLayout
-        android:id="@+id/rl_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:orientation="vertical" >
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#cccccc" />
+        android:background="@android:color/white"
+        android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/kf5_agent_frame_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="@dimen/kf5_dimen_4dp" >
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
 
-            <ImageView
-                android:id="@+id/kf5_chat_by_voice"
-                android:layout_width="wrap_content"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:id="@+id/kf5_chat_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/kf5_dimen_4dp">
+
+                <ImageView
+                    android:id="@+id/kf5_chat_by_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/kf5_dimen_4dp"
+                    android:layout_marginRight="@dimen/kf5_dimen_4dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/kf5_chat_by_voice" />
+
+                <com.kf5sdk.view.AudioRecordButton
+                    android:id="@+id/kf5_recordButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/kf5_button_recordnormal"
+                    android:gravity="center"
+                    android:minHeight="0dp"
+                    android:padding="5dp"
+                    android:text="@string/kf5_voice_normal"
+                    android:textColor="@color/kf5_voice_text_color"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/kf5_layout_edittext_and_emoji"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/kf5_input_bar_bg_active"
+                    android:visibility="visible">
+
+                    <com.kf5sdk.view.EmojiconEditText
+                        android:id="@+id/kf5_chat_with_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/kf5_chat_by_emoji"
+                        android:layout_toStartOf="@+id/kf5_chat_by_emoji"
+                        android:background="@null"
+                        android:gravity="start|center"
+                        android:lineSpacingExtra="@dimen/kf5_dimen_4dp"
+                        android:maxLines="5"
+                        android:minHeight="40dp"
+                        android:textSize="@dimen/kf5_text_size_16" />
+
+                    <ImageView
+                        android:id="@+id/kf5_chat_by_emoji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/kf5_dimen_2dp"
+                        android:layout_marginStart="@dimen/kf5_dimen_2dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/kf5_chat_by_emoji" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/kf5_chat_by_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/kf5_dimen_4dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_4dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/kf5_chat_by_others"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/kf5_textview_send_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/kf5_dimen_4dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_4dp"
+                    android:background="@drawable/kf5_btn_send_bg"
+                    android:gravity="center"
+                    android:text="发送"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/kf5_text_size_16"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/kf5_ai_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginEnd="@dimen/kf5_dimen_4dp"
-                android:layout_marginRight="@dimen/kf5_dimen_4dp"
-                android:contentDescription="@null"
-                android:src="@drawable/kf5_chat_by_voice" />
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/kf5_dimen_4dp">
 
-            <com.kf5sdk.view.AudioRecordButton
-                android:id="@+id/kf5_recordButton"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:background="@drawable/kf5_button_recordnormal"
-                android:gravity="center"
-                android:minHeight="0dp"
-                android:padding="5dp"
-                android:text="@string/kf5_voice_normal"
-                android:textColor="@color/kf5_voice_text_color"
-                android:visibility="gone" />
 
-            <RelativeLayout
-                android:id="@+id/kf5_layout_edittext_and_emoji"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:background="@drawable/kf5_input_bar_bg_active"
-                android:visibility="visible" >
+                <TextView
+                    android:id="@+id/kf5_ai_to_agent_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/kf5_ai_to_agent_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/kf5_ai_to_agent"
+                    android:textColor="@drawable/kf5_ai_to_agent_text_bg"
+                    android:textSize="@dimen/kf5_text_size_16" />
 
                 <com.kf5sdk.view.EmojiconEditText
-                    android:id="@+id/kf5_chat_with_text"
-                    android:layout_width="match_parent"
+                    android:id="@+id/kf5_ai_text_view"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_toLeftOf="@+id/kf5_chat_by_emoji"
-                    android:layout_toStartOf="@+id/kf5_chat_by_emoji"
-                    android:background="@null"
+                    android:layout_marginLeft="@dimen/kf5_dimen_4dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/kf5_input_bar_bg_active"
                     android:gravity="start|center"
                     android:lineSpacingExtra="@dimen/kf5_dimen_4dp"
                     android:maxLines="5"
                     android:minHeight="40dp"
                     android:textSize="@dimen/kf5_text_size_16" />
 
-                <ImageView
-                    android:id="@+id/kf5_chat_by_emoji"
+                <TextView
+                    android:id="@+id/kf5_ai_textview_send_message"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginLeft="@dimen/kf5_dimen_2dp"
-                    android:layout_marginStart="@dimen/kf5_dimen_2dp"
-                    android:contentDescription="@null"
-                    android:src="@drawable/kf5_chat_by_emoji" />
-            </RelativeLayout>
-
-            <ImageView
-                android:id="@+id/kf5_chat_by_others"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/kf5_dimen_4dp"
-                android:layout_marginStart="@dimen/kf5_dimen_4dp"
-                android:contentDescription="@null"
-                android:src="@drawable/kf5_chat_by_others"
-                android:visibility="visible" />
-
-            <TextView
-                android:id="@+id/kf5_textview_send_message"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="@dimen/kf5_dimen_4dp"
-                android:layout_marginStart="@dimen/kf5_dimen_4dp"
-                android:background="@drawable/kf5_btn_send_bg"
-                android:gravity="center"
-                android:text="发送"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/kf5_text_size_16"
-                android:visibility="gone" />
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/kf5_dimen_4dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_4dp"
+                    android:background="@drawable/kf5_btn_send_bg"
+                    android:gravity="center"
+                    android:text="发送"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/kf5_text_size_16" />
+            </LinearLayout>
         </LinearLayout>
-
-        <FrameLayout
-            android:id="@+id/kf5_layout_container"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:padding="@dimen/kf5_dimen_6dp" >
-        </FrameLayout>
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/kf5_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/kf5_dimen_6dp" />
 
 </LinearLayout>

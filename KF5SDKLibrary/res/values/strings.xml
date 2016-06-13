@@ -105,4 +105,7 @@
     <string name="kf5_photo_unit">张</string>
     <string name="kf5_image_selector_activity_title">图片选择</string>
 
+    <!-- IM 相关-->
+    <string name="kf5_ai_to_agent">转人工</string>
+    <string name="kf5_cancel_queue_waiting">点击取消排队</string>
 </resources>
