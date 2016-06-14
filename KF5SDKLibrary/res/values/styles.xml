@@ -6,7 +6,7 @@
         <item name="android:windowNoTitle">true</item>
     </style>-->
 
-    <style name="KF5AppTheme" parent="@android:style/Theme.DeviceDefault.Light">
+    <style name="KF5AppTheme" parent="android:Theme.DeviceDefault.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowContentOverlay">@null</item>

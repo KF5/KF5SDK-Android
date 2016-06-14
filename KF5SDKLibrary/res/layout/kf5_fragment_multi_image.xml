@@ -36,7 +36,7 @@
             android:paddingLeft="@dimen/kf5_dimen_16dp"
             android:paddingRight="@dimen/kf5_dimen_16dp"
             android:singleLine="true"
-            android:textColor="@color/kf5_image_selctor_text_color"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/kf5_text_size_16"
             tools:text="所有图片" />
     </RelativeLayout>
