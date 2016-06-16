@@ -53,89 +53,84 @@
       <activity
             android:name="com.chosen.kf5sdk.ImageBrowerActivity"
             android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.chosen.kf5sdk.HelpCenterActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.chosen.kf5sdk.FeedBackActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.chosen.kf5sdk.LookFeedBackActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.chosen.kf5sdk.HelpCenterTypeActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.chosen.kf5sdk.HelpCenterTypeChildActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.chosen.kf5sdk.HelpCenterTypeDetailsActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.chosen.kf5sdk.FeedBackDetailsActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.chosen.kf5sdk.ImagePagerActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.chosen.kf5sdk.LinkUrlActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.chosen.kf5sdk.ImageActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.chosen.kf5sdk.OrderAttributeActivity"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" />
         <activity
             android:name="com.chosen.kf5sdk.KF5ChatActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" >
+            android:theme="@style/KF5AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
         </activity>
         <activity
-            android:name="com.kf5chat.ui.GifViewActivity"
+            android:name="com.chosen.kf5sdk.LinkUrlActivity"
             android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" />
         <activity
-            android:name="com.kf5chat.ui.ImageBrowerActivity"
+            android:name="com.chosen.kf5sdk.LookFeedBackActivity"
             android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
-        </activity>
-
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" />
+        <activity
+            android:name="com.chosen.kf5sdk.OrderAttributeActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" />
+        <activity
+            android:name="com.chosen.kf5sdk.FeedBackActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" />
+        <activity
+            android:name="com.chosen.kf5sdk.FeedBackDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" />
+        <activity
+            android:name="com.chosen.kf5sdk.HelpCenterActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" />
+        <activity
+            android:name="com.chosen.kf5sdk.HelpCenterTypeActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" />
+        <activity
+            android:name="com.chosen.kf5sdk.HelpCenterTypeChildActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" />
+        <activity
+            android:name="com.chosen.kf5sdk.HelpCenterTypeDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" />
+        <activity
+            android:name="com.chosen.kf5sdk.ImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" />
         <activity
             android:name="com.kf5sdk.image.ImageSelectorActivity"
             android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait"
+            android:theme="@style/KF5AppTheme" >
         </activity>
-        
+
         <service
             android:name="com.kf5chat.service.MessageService"
-            android:enabled="true" >
-        </service> 
+            android:enabled="true" />
     </application>
 
 </manifest>
