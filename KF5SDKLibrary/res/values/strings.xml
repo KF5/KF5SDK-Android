@@ -107,5 +107,5 @@
 
     <!-- IM 相关-->
     <string name="kf5_ai_to_agent">转人工</string>
-    <string name="kf5_cancel_queue_waiting">点击取消排队</string>
+    <string name="kf5_cancel_queue_waiting">去留言</string>
 </resources>

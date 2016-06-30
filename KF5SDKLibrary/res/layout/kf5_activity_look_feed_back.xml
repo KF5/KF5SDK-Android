@@ -5,6 +5,7 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <RelativeLayout
+
         android:id="@+id/kf5_look_feed_back_title_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

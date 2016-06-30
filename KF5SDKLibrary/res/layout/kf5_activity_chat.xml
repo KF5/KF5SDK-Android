@@ -235,6 +235,59 @@
                     android:textSize="@dimen/kf5_text_size_16" />
             </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kf5_queue_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:padding="@dimen/kf5_dimen_4dp">
+
+
+                <com.kf5sdk.view.EmojiconEditText
+                    android:id="@+id/kf5_queue_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/kf5_dimen_4dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/kf5_input_bar_bg_active"
+                    android:gravity="start|center"
+                    android:hint="请输入一段文字描述您的问题"
+                    android:lineSpacingExtra="@dimen/kf5_dimen_4dp"
+                    android:maxLines="5"
+                    android:minHeight="40dp"
+                    android:textSize="@dimen/kf5_text_size_16" />
+
+                <TextView
+                    android:id="@+id/kf5_queue_send_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/kf5_dimen_4dp"
+                    android:layout_marginStart="@dimen/kf5_dimen_4dp"
+                    android:background="@drawable/kf5_btn_send_bg"
+                    android:gravity="center"
+                    android:text="发送"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/kf5_text_size_16" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
     <FrameLayout

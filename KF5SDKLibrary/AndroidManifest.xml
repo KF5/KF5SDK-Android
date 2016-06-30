@@ -4,10 +4,12 @@
     android:versionCode="1"
     android:versionName="1.0.0" >
 
+    
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application>
@@ -18,7 +20,7 @@
             android:theme="@style/KF5AppTheme" />
         <activity
             android:name="com.chosen.kf5sdk.KF5ChatActivity"
-            android:configChanges="orientation|screenSize"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/KF5AppTheme">
             <intent-filter>

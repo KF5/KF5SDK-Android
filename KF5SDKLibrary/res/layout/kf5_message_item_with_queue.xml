@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="horizontal"
+    android:paddingBottom="@dimen/kf5_dimen_8dp"
     android:paddingTop="@dimen/kf5_dimen_16dp">
 
     <TextView
@@ -14,8 +15,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/kf5_message_item_queue_left_bg"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/kf5_text_size_14"
-        tools:text="你当前在队里的第十位；" />
+        android:textSize="@dimen/kf5_text_size_14" />
 
     <TextView
         android:id="@+id/kf5_message_item_cancel_queue"
