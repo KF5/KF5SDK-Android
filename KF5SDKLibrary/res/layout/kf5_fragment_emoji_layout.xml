@@ -57,8 +57,6 @@
                 android:layout_marginLeft="@dimen/kf5_dimen_6dp"
                 android:src="@drawable/kf5_emoji_page_unselected" />
         </LinearLayout>
-
-
     </FrameLayout>
 
 </RelativeLayout>
