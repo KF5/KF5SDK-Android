@@ -5,7 +5,7 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <RelativeLayout
-        android:id="@+id/kf5_help_center_detail_top_layout"
+        android:id="@+id/kf5_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/kf5_title_bar_bg" >
@@ -21,7 +21,7 @@
             android:src="@drawable/kf5_back_img_bg" />
 
         <TextView
-            android:id="@+id/kf5_help_center_detail_title"
+            android:id="@+id/kf5_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -33,7 +33,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/kf5_help_center_detail_top_layout"
+        android:layout_below="@+id/kf5_top_layout"
         android:background="@android:color/white" >
 
         <LinearLayout

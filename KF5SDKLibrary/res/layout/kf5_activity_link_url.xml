@@ -1,15 +1,16 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="${relativePackage}.${activityClass}" >
+    tools:context="${relativePackage}.${activityClass}">
 
     <RelativeLayout
         android:id="@+id/kf5_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/kf5_title_bar_bg" >
+        android:layout_alignParentTop="true"
+        android:background="@color/kf5_title_bar_bg">
 
         <ImageView
             android:id="@+id/kf5_return_img"
@@ -17,8 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:contentDescription="@null"
             android:layout_centerVertical="true"
+            android:contentDescription="@null"
             android:src="@drawable/kf5_back_img_bg" />
 
         <TextView
@@ -34,6 +35,7 @@
     <WebView
         android:id="@+id/kf5_webview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/kf5_top_layout" />
 
-</LinearLayout>
+</RelativeLayout>

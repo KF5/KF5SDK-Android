@@ -3,13 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <GridView
+    <com.kf5sdk.view.NoScrollGridView
         android:id="@+id/kf5_gridview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:gravity="center"
+        android:listSelector="@drawable/kf5_list_item_seletecd_bg"
         android:numColumns="7"
         android:overScrollMode="never"
         android:verticalSpacing="@dimen/kf5_dimen_32dp" />

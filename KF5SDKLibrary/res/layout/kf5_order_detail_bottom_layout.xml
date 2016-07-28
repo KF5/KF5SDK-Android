@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/kf5_send_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#eaedf4" >
+        android:background="#eaedf4">
 
         <RelativeLayout
             android:id="@+id/kf5_send_content_layout"
@@ -17,7 +18,7 @@
             android:paddingLeft="@dimen/kf5_dimen_4dp"
             android:paddingRight="@dimen/kf5_dimen_4dp"
             android:paddingTop="@dimen/kf5_dimen_2dp"
-            android:visibility="visible" >
+            android:visibility="visible">
 
             <ImageView
                 android:id="@+id/kf5_activity_feed_back_choice_img"
@@ -74,7 +75,7 @@
             android:paddingLeft="@dimen/kf5_dimen_4dp"
             android:paddingRight="@dimen/kf5_dimen_4dp"
             android:paddingTop="@dimen/kf5_dimen_2dp"
-            android:visibility="gone" >
+            android:visibility="gone">
 
             <ImageView
                 android:id="@+id/kf5_activity_feed_back_select_img"
@@ -97,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/kf5_dimen_4dp"
                 android:layout_marginStart="@dimen/kf5_dimen_4dp"
-                android:scrollbars="none" >
+                android:scrollbars="none">
 
                 <LinearLayout
                     android:id="@+id/kf5_image_container_layout"

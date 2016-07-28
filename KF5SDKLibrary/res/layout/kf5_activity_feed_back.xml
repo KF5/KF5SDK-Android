@@ -5,7 +5,7 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <RelativeLayout
-        android:id="@+id/kf5_feed_back_top_layout"
+        android:id="@+id/kf5_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -23,7 +23,7 @@
             android:visibility="visible" />
 
         <TextView
-            android:id="@+id/kf5_feed_back_submit"
+            android:id="@+id/kf5_right_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -38,7 +38,7 @@
             android:textSize="@dimen/kf5_text_xh_size" />
 
         <TextView
-            android:id="@+id/kf5_feed_back_title"
+            android:id="@+id/kf5_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_layout"
-        android:layout_below="@+id/kf5_feed_back_top_layout"
+        android:layout_below="@+id/kf5_top_layout"
         android:background="@null"
         android:focusable="false"
         android:gravity="top|start"

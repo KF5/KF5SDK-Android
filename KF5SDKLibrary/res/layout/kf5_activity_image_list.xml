@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
     <include
+        android:id="@+id/kf5_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         layout="@layout/kf5_image_selector_customer_actionbar" />
@@ -13,6 +14,7 @@
         android:id="@+id/kf5_image_framelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/kf5_top_layout"
         android:background="@color/kf5_image_selector_background_color" />
 
-</LinearLayout>
+</RelativeLayout>

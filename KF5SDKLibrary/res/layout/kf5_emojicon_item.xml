@@ -20,11 +20,19 @@
     android:layout_gravity="center"
     android:orientation="vertical">
 
-    <com.kf5sdk.view.EmojiconTextView
-        android:id="@+id/kf5_emojicon_icon"
-        android:layout_width="36dip"
-        android:layout_height="36dip"
+    <!--<com.kf5sdk.view.EmojiconTextView-->
+    <!--android:id="@+id/kf5_emojicon_icon"-->
+    <!--android:layout_width="36dip"-->
+    <!--android:layout_height="36dip"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center" />-->
+
+
+    <ImageView
+        android:id="@+id/kf5_img_emoji"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
         android:layout_gravity="center"
-        android:gravity="center" />
+        android:scaleType="centerCrop" />
 
 </FrameLayout>
