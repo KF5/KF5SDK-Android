@@ -3,17 +3,18 @@
     android:id="@+id/btnLayoutSingle"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:background="@android:color/white"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/kf5_dialogBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/kf5_dimen_6dp"
+        android:layout_gravity="end"
         android:background="@drawable/kf5_chat_messagebox_single_btn"
         android:gravity="center"
+        android:padding="@dimen/kf5_dimen_6dp"
         android:singleLine="true"
-        android:layout_gravity="end"
         android:text="button"
         android:textColor="#ff0079ff"
         android:textSize="16.0sp" />

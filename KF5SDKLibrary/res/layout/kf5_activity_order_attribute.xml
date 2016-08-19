@@ -34,11 +34,19 @@
             android:textSize="@dimen/kf5_text_xxh_size" />
     </RelativeLayout>
 
+
+    <View
+        android:id="@+id/kf5_deliver"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/kf5_top_layout"
+        android:background="@color/kf5_line_deliver_color" />
+
     <ListView
         android:id="@+id/kf5_activity_order_attr_list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/kf5_top_layout"
+        android:layout_below="@+id/kf5_deliver"
         android:background="@android:color/white"
         android:divider="@android:color/white"
         android:dividerHeight="0dp"
