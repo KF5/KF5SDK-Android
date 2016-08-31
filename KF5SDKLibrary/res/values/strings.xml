@@ -108,4 +108,10 @@
     <!-- IM 相关-->
     <string name="kf5_ai_to_agent">转人工</string>
     <string name="kf5_cancel_queue_waiting">去留言</string>
+
+    <!--权限相关-->
+    <string name="kf5_write_external_storage">访问您设备上的照片、媒体内容和文件</string>
+    <string name="kf5_record">录制音频</string>
+    <string name="kf5_call_phone">拨打电话和管理通话</string>
+    <string name="kf5_camera">拍摄照片和录制视频</string>
 </resources>
